@@ -25,6 +25,6 @@ setup(
     entry_points='''
         [ckan.plugins]
         # Add plugins here, e.g.
-        # myplugin=ckanext.ottawa.plugin:PluginClass
+        ottawa_theme=ckanext.ottawa.plugin:OttawaThemePlugin
     ''',
 )
