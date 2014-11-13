@@ -14,6 +14,11 @@
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
+
+body {
+    font: 16px/18px "Arial",sans-serif;
+}
+
 /*
  Default Mixins and namespace variables
  */
@@ -38,11 +43,19 @@
   background: linear-gradient(#176ca7, #114f7a); }
 
 #wb-bar {
-  background: #474747;
+  background: none;
   border-bottom: 1px solid #fff;
   color: #fff;
-  min-height: 2.2em;
+  min-height: 40px;
+  padding: 7px 0 8px 0;
+  background: url(/img/topbarbg.png) repeat-x bottom;
   z-index: 1; }
+
+#wb-bar ul li{
+    border-radius: 5px;
+    background: #004587;
+    margin: 0 5px 0 5px;
+}
 
 #wb-lng ul, #wb-glb-mn .pnl-btn {
   float: right;
@@ -148,7 +161,6 @@
   margin: 5px 0;
   text-align: right; }
 #wb-lng .curr {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB90RVh0U29mdHdhcmUATWFjcm9tZWRpYSBGaXJld29ya3MgOLVo0ngAAAA6SURBVAiZY/z//z8DMvj14+s+BgYGBjYObicUif///8Pxz+9f9v2HAigbLodVETbFOBWhK8arCFkxABifl5syjffvAAAAAElFTkSuQmCC") no-repeat scroll center bottom;
   color: #ccc;
   display: block; }
 
