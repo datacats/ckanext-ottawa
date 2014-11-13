@@ -19,6 +19,7 @@ body {
     font: 16px/18px "Arial",sans-serif;
 }
 
+
 /*
  Default Mixins and namespace variables
  */
@@ -37,10 +38,7 @@ body {
   width: 100%; }
 
 #wb-bnr {
-  background: #114f7a;
-  background: -webkit-gradient(linear, left top, left bottom, from(#176ca7), to(#114f7a));
-  background: -webkit-linear-gradient(#176ca7, #114f7a);
-  background: linear-gradient(#176ca7, #114f7a); }
+  background: white;}
 
 #wb-bar {
   background: none;
@@ -101,9 +99,8 @@ body {
   pointer-events: none; }
 #wb-sttl object, #wb-sttl img {
   float: left;
-  height: 1.5em;
   margin: 9px 15px 9px 0;
-  width: 3.25em; }
+}
 
 [dir=rtl] #wb-lng > ul, [dir=rtl] #wb-glb-mn > ul {
   float: left; }
@@ -510,3 +507,13 @@ main {
     content: ""; }
   #wb-cont {
     margin-top: 0; } }
+
+
+.panel-heading{
+    background-color: #004587 !important;
+    color: white !important;
+}
+
+.panel-title {
+    color: white !important;
+}
