@@ -186,7 +186,7 @@ main {
   color: #000; }
 
 #wb-sm {
-  background: #0e4164; }
+  background: #004587; }
   #wb-sm .menu {
     margin-bottom: 0;
     text-shadow: 1px 1px 1px #666; }
@@ -218,7 +218,7 @@ main {
     display: none; }
 
 #mb-pnl .lng-ofr, #mb-pnl .srch-pnl, #mb-pnl .sm-pnl {
-  background: #0e4164; }
+  background: #004587; }
 
 #mb-pnl.modal-content {
   background: #193451; }
