@@ -16,7 +16,7 @@
  */
 
 body {
-    font: 16px/18px "Arial",sans-serif;
+    font: 13px/18px "Arial",sans-serif;
 }
 
 
@@ -516,4 +516,23 @@ main {
 
 .panel-title {
     color: white !important;
+}
+
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav li a:hover{
+    text-decoration:none;
+    color: #004587;
+}
+
+.nav li a:visited{
+    color: white;
+}
+
+.nav li a:hover:visited{
+    color: #004587;
 }
