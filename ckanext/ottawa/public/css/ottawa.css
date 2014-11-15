@@ -525,6 +525,10 @@ main {
     color: white !important;
 }
 
+.panel-title a{
+    text-decoration: none;
+}
+
 .wb-menu .nav li a:hover{
     text-decoration:none;
     color: #004587;
@@ -545,4 +549,13 @@ main {
 
 .main-content {
     background-color: white;
+}
+
+.pagination li{
+    display: inline !important;
+}
+
+.pagination>li.disabled+li>a {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
 }
