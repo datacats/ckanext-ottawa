@@ -101,6 +101,56 @@
 </section>
 {% endblock %}
 
+{% block content %}
+  <div class="container">
+    <div class="row">
+
+    {% block secondary %}
+      <div class="col-md-3 col-md-push-9" >
+      {% block secondary_content %}
+      {% endblock %}
+      </div>
+    {% endblock secondary %}
+
+    {% block pre_primary %}{% endblock %}
+    {% block primary %}
+    <div class="col-md-9 col-md-pull-3 main-content">
+    <main role="main" property="mainContentOfPage">
+
+      {% block flash %}
+      {% if flash_messages %}
+      <div class="row">
+        {% for message in flash_messages %}
+        <div class="alert fade in {{ message.category }}">
+          {{ h.literal(message) }}
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% endblock flash %}
+
+      {% block page_title %}
+      <div class="row">
+        <div class="col-md-12">
+        <h2 class="h3">{% block subtitle %}{% endblock %}</h2>
+        </div>
+      </div>
+      {% endblock %}
+
+      {% block primary_content %}
+      <div class="row">
+      {% block primary_content_inner %}{% endblock %}
+      </div>
+      {% endblock primary_content %}
+
+    </main>
+    </div>
+    {% endblock primary %}
+
+    </div>
+  </div>
+{% endblock content %}
+
 {% block footer %}
     {% include "footer.html" %}
 {% endblock %}
