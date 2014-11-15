@@ -19,6 +19,9 @@ body {
     font: 13px/18px "Arial",sans-serif;
 }
 
+a:visited{
+    color:inherit;
+}
 
 /*
  Default Mixins and namespace variables
@@ -519,21 +522,20 @@ main {
     color: white !important;
 }
 
-
-.nav li a{
-    text-decoration: none;
-    color: white;
-}
-
 .nav li a:hover{
     text-decoration:none;
     color: #004587;
 }
 
-.nav li a:visited{
-    color: white;
-}
-
 .nav li a:hover:visited{
     color: #004587;
+}
+
+.wb-menu .nav li a{
+    color:white;
+    text-decoration:none;
+}
+
+.wb-menu .nav li a:visited{
+    color:white;
 }
