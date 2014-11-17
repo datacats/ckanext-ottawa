@@ -568,3 +568,10 @@ main {
     padding-left: 15px;
     margin-bottom: 10px;
 }
+
+footer{
+    box-shadow: 0 0px 5px 0px #949494;
+    -webkit-box-shadow: 0 0px 8px 0px #949494;
+    margin-top:15px;
+    background-color: white;
+}

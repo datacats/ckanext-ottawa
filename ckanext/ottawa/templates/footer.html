@@ -1,0 +1,38 @@
+
+{% block footer_content %}
+<footer role="contentinfo" id="wb-info wb-foot" class="visible-sm visible-md visible-lg wb-navcurr">
+  <div class="container">
+
+    <nav role="navigation" class="row"><h2>{% set api_url = 'http://docs.ckan.org/{0}/{1}/api.html'.format(request.environ.CKAN_LANG, g.ckan_doc_version) %}</h2>
+      <section class="col-sm-4">
+          <div class="boxes-box-content">
+              <div class="logo">
+                  <img src="{{ h.url_for_static('/img/footer-ottawalogo.png') }}" class="mrgn-bttm-md" alt="Ottawa Logo" width="107" height="47">
+                  <p>© 2001-2014 City of Ottawa</p>
+                  <p>110 Laurier Avenue West <br> Ottawa, Ontario, K1P 1J1</p>
+              </div>
+          </div>
+      </section>
+      <section class="col-sm-4"><h3>{{ _('News') }}</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">{{ _('FAQ') }}</a></li>
+            <li><a href="#">{{ _('Privacy') }}</a></li>
+            <li><a href="#">{{ _('Contact us') }}</a></li>
+            <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
+          </ul>
+      </section>
+      <section class="col-sm-4"><h3>{{ _('Powered by')}}</h3>
+          <ul class="list-unstyled">
+            <li><a rel="external" href="http://ckan.org">CKAN</a></li>
+          </ul>
+      </section>
+    </nav>
+  </div>
+{% block footer_debug %}
+  {% if g.debug %}
+    {% include 'snippets/debug.html' %}
+  {% endif %}
+{% endblock %}
+</footer>
+
+{% endblock %}
