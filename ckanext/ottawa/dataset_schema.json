@@ -21,7 +21,7 @@
     "field_name": "notes",
     "label": "Description",
     "form_snippet": "markdown.html",
-    "form_placeholder": "eg. Some useful notes about the data"
+    "form_placeholder": "eg. Some useful notes about the dataaa"
   }, {
     "field_name": "tag_string",
     "label": "Tags",

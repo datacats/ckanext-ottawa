@@ -1,1 +1,13 @@
 {% ckan_extends %}
+
+{% block actions_content %}
+  <div class="col-md-12">
+    <div class="btn-group">
+       {% if h.check_access('package_update', {'id':pkg.id }) %}
+          {% link_for _('Edit'), controller='package', action='edit', id=pkg.name, class_='btn btn-default' %}
+          {{ h.follow_button('dataset', pkg.id) }}
+          {% link_for _('History'), controller='package', action='history', id=pkg.name, class_='btn btn-default' %}
+        {% endif %}
+    </div>
+  </div>
+{% endblock %}

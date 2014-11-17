@@ -547,6 +547,10 @@ main {
     color:white;
 }
 
+.nav-pills li a{
+    border-radius: 0;
+}
+
 .main-content {
     background-color: white;
 }
@@ -558,4 +562,9 @@ main {
 .pagination>li.disabled+li>a {
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
+}
+
+.nav-tabs {
+    padding-left: 15px;
+    margin-bottom: 10px;
 }
