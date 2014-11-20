@@ -4,13 +4,19 @@
   "about_url": "http://github.com/open-data/ckanext-scheming",
   "dataset_fields": [{
     "field_name": "title",
-    "label": "Title",
-    "validators": "if_empty_same_as(name) unicode",
-    "form_snippet": "large_text.html",
+    "label": {
+        "en": "Title",
+        "fr": "Titre"
+        },
+    "validators": "if_empty_same_as(name) unicode fluent_text",
+    "output_validators": "fluent_text_output",
+    "form_languages": ["en", "fr"],
+    "form_snippet": "fluent_text.html",
     "form_attrs": {
       "data-module": "slug-preview-target"
     },
-    "form_placeholder": "eg. A descriptive title"
+    "form_placeholder": "eg. A descriptive title",
+    "display_snippet": "fluent_text.html"
   }, {
     "field_name": "name",
     "label": "URL",
@@ -19,9 +25,59 @@
     "form_placeholder": "eg. my-dataset"
   }, {
     "field_name": "notes",
-    "label": "Description",
-    "form_snippet": "markdown.html",
-    "form_placeholder": "eg. Some useful notes about the dataaa"
+    "label": {
+        "en": "Description",
+        "fr": "Résumé"
+        },
+    "validators": "fluent_text",
+    "output_validators": "fluent_text_output",
+    "form_languages": ["en", "fr"],
+    "form_snippet": "fluent_markdown.html",
+    "form_placeholder": "eg. Some useful notes about the data",
+    "display_snippet": "fluent_text.html"
+  }, {
+    "field_name": "first_published",
+    "label": "Date First Published",
+    "validators": "unicode",
+    "form_snippet": "datepicker.html",
+    "form_placeholder": "eg. 01/01/2010",
+    "display_snippet": "large_text.html"
+  }, {
+    "field_name": "frequency",
+    "label": {
+        "en": "Update Frequency",
+        "fr": "Fréquence des mises à jour"
+        },
+    "validators": "unicode fluent_text",
+    "output_validators": "fluent_text_output",
+    "form_languages": ["en", "fr"],
+    "form_snippet": "fluent_text.html",
+    "form_placeholder": "eg. Monthly",
+    "display_snippet": "fluent_text.html"
+  }, {
+    "field_name": "accuracy",
+    "label": {
+        "en": "Accuracy",
+        "fr": "Exactitude des données"
+        },
+    "validators": "fluent_text",
+    "output_validators": "fluent_text_output",
+    "form_languages": ["en", "fr"],
+    "form_snippet": "fluent_markdown.html",
+    "form_placeholder": "Notes on Data Accuracy",
+    "display_snippet": "fluent_text.html"
+  }, {
+    "field_name": "attributes",
+    "label": {
+        "en": "Attributes",
+        "fr": "Métadonnées supplémentaires"
+        },
+    "validators": "fluent_text",
+    "output_validators": "fluent_text_output",
+    "form_languages": ["en", "fr"],
+    "form_snippet": "fluent_markdown.html",
+    "form_placeholder": "eg. Definitions of Table Columns, etc...",
+    "display_snippet": "fluent_text.html"
   }, {
     "field_name": "tag_string",
     "label": "Tags",

@@ -1,0 +1,9 @@
+<div class="form-group">
+	<label for="field-{{field.field_name}}">{{h.scheming_language_text(field.label)}}
+        <span class="datepicker-format">
+            (<abbr title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)
+        </span>
+    </label>
+	<input class="form-control" type="date" id="field-{{field.field_name}}"
+        name="field-{{field.field_name}}" value="{{data[field.field_name]}}" />
+</div>
