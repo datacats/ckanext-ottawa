@@ -2,19 +2,17 @@
   "scheming_version": 1,
   "dataset_type": "dataset",
   "about_url": "http://github.com/open-data/ckanext-scheming",
-  "dataset_fields": [{
+  "dataset_fields": [
+  {
     "field_name": "title",
     "label": {
         "en": "Title",
         "fr": "Titre"
         },
-    "validators": "if_empty_same_as(name) unicode fluent_text",
+    "form_snippet": "fluent_text.html",
+    "validators": "fluent_text unicode",
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
-    "form_snippet": "fluent_text.html",
-    "form_attrs": {
-      "data-module": "slug-preview-target"
-    },
     "form_placeholder": "eg. A descriptive title",
     "display_snippet": "fluent_text.html"
   }, {
@@ -24,7 +22,7 @@
     "form_snippet": "slug.html",
     "form_placeholder": "eg. my-dataset"
   }, {
-    "field_name": "notes",
+    "field_name": "description",
     "label": {
         "en": "Description",
         "fr": "Résumé"
@@ -33,22 +31,23 @@
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
     "form_snippet": "fluent_markdown.html",
-    "form_placeholder": "eg. Some useful notes about the data",
+    "form_placeholder": "eg. Description or other useful notes about the data",
     "display_snippet": "fluent_text.html"
   }, {
     "field_name": "first_published",
     "label": "Date First Published",
-    "validators": "unicode",
-    "form_snippet": "datepicker.html",
+    "validators": "fluent_text unicode",
+    "output_validators": "fluent_text_output",
+    "form_snippet": "fluent_text.html",
     "form_placeholder": "eg. 01/01/2010",
-    "display_snippet": "large_text.html"
+    "display_snippet": "fluent_text.html"
   }, {
     "field_name": "frequency",
     "label": {
         "en": "Update Frequency",
         "fr": "Fréquence des mises à jour"
         },
-    "validators": "unicode fluent_text",
+    "validators": "fluent_text unicode",
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
     "form_snippet": "fluent_text.html",
@@ -60,7 +59,7 @@
         "en": "Accuracy",
         "fr": "Exactitude des données"
         },
-    "validators": "fluent_text",
+    "validators": "fluent_text unicode",
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
     "form_snippet": "fluent_markdown.html",
@@ -103,11 +102,6 @@
     "form_placeholder": "http://example.com/dataset.json",
     "display_property": "foaf:homepage",
     "display_snippet": "link.html"
-  }, {
-    "field_name": "version",
-    "label": "Version",
-    "validators": "ignore_missing unicode package_version_validator",
-    "form_placeholder": "1.0"
   }, {
     "field_name": "author",
     "label": "Author",
