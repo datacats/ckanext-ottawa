@@ -1,0 +1,7 @@
+{%- set values = data[field.field_name] -%}
+<dl>
+{%- if h.lang() in field.form_languages -%}
+  {%- if values.get(h.lang()) -%}
+    <dd>{{ values[h.lang()] }}</dd>
+  {%- endif -%}
+{%- endif -%}

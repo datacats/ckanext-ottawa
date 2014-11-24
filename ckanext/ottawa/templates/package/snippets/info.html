@@ -1,0 +1,31 @@
+{% block package_info %}
+  {% if pkg %}
+    <div class="panel panel-info">
+      {% block package_info_inner %}
+        {% block heading %}
+          <div class="panel-heading">
+              <h3 class="panel-title">{{ pkg.title[h.lang()] or pkg.name }}</h1>
+          </div>
+        {% endblock %}
+
+        <div class="panel-body">
+            {% block nums %}
+              <div class="nums">
+                <dl>
+                  <dt>{{ _('Followers') }}</dt>
+                  <dd>{{ h.SI_number_span(h.get_action('dataset_follower_count', {'id': pkg.id})) }}</dd>
+                </dl>
+              </div>
+            {% endblock %}
+            {% block follow_button %}
+              {% if not hide_follow_button %}
+                <div class="follow_button">
+                  {{ h.follow_button('dataset', pkg.name) }}
+                </div>
+              {% endif %}
+            {% endblock %}
+        </div>
+      {% endblock %}
+    </div>
+  {% endif %}
+{% endblock %}

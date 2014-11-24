@@ -11,3 +11,18 @@
     </div>
   </div>
 {% endblock %}
+
+{% block package_item_title %}
+    {% if pkg.private %}
+    <div class="col-md-12">
+      <p class="text-left">L
+      <span class="fa fa-lock"></span> {{ _('Private') }}
+      </p>
+    </div>
+    {% endif %}
+    <div class="col-md-12">
+        {% if pkg.state.startswith('draft') %}
+          <span class="text-info">[{{ _('Draft') }}]</span>
+        {% endif %}
+    </div>
+{% endblock %}
