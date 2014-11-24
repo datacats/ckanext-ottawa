@@ -34,7 +34,7 @@
     "form_placeholder": "eg. Description or other useful notes about the data",
     "display_snippet": "fluent_text.html"
   }, {
-    "field_name": "first_published",
+    "field_name": "date_published",
     "label": "Date First Published",
     "validators": "fluent_text unicode",
     "output_validators": "fluent_text_output",
