@@ -26,5 +26,6 @@ setup(
         [ckan.plugins]
         # Add plugins here, e.g.
         ottawa_theme=ckanext.ottawa.plugin:OttawaThemePlugin
+        ottawa_forms=ckanext.ottawa.plugin:OttawaFormsPlugin
     ''',
 )
