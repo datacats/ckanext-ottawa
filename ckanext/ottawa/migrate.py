@@ -1,25 +1,48 @@
 
-# In[90]:
+# In[153]:
 
 import ckanapi
 
 
-# In[127]:
+# In[172]:
 
 ckan = ckanapi.RemoteCKAN("http://data.ottawa.ca/", apikey="...")
 ckan_v2 = ckanapi.RemoteCKAN("http://localhost/", apikey="...")
 
 
-# In[128]:
+# In[173]:
+
+#move groups to organizations
+groups = ckan.action.group_list()
+
+for name in groups:
+    group = ckan.action.group_show(id=name)
+    group_v2 = ckan_v2.action.organization_create(name=group['name'],
+                                                  id=group['id'],
+                                                  title=group['title'],
+                                                  description=group['description'],
+                                                  image_url=group['image_url'],
+                                                  state=group['state'],
+                                                  approval_status=group['approval_status'],
+                                                  )
+    print "Created Organization {0}".format(group_v2['name'])
+
+
+# In[183]:
 
 packages = ckan.action.package_list()
 
-
-# In[129]:
-
 for name in packages:
     package = ckan.action.package_show(id=name)
+    #groups = [{'name': group['name']} for group in package['groups']]
+
+    group = ''
+    if package.get('groups', None):
+        group = package['groups'][0]['name']
+
     v2 = {
+        'id': package['id'],
+        'owner_org': group,
         'maintainer': package['maintainer'],
         'maintainer_email': package['maintainer_email'],
         'frequency': {'en': package['update_frequency'].replace('"', ''), 'fr': package['frequence_a_jour'].replace('"', '').decode('unicode-escape')},
@@ -34,7 +57,10 @@ for name in packages:
         'attributes': {'en': package['attributes'].replace('"', ''), 'fr': package['supplementaires'].replace('"', '').decode('unicode-escape')}
     }
 
-    package_v2 = ckan_v2.action.package_create(name=v2['name'],
+    try:
+        package_v2 = ckan_v2.action.package_create(id=v2['id'],
+                                           name=v2['name'],
+                                           owner_org=v2['owner_org'],
                                            maintainer=v2['maintainer'],
                                            maintainer_email=v2['maintainer_email'],
                                            frequency=v2['frequency'],
@@ -47,6 +73,8 @@ for name in packages:
                                            title=v2['title'],
                                            attributes=v2['attributes'],
                                            type='dataset')
+    except ckanapi.CKANAPIError:
+        print "could not create package {0}".format(v2['name'])
+        continue
 
-
-# In[ ]:
+    print "Created Package {0}".format(package_v2['name'])

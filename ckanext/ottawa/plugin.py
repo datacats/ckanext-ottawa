@@ -36,7 +36,7 @@ class OttawaFormsPlugin(SchemingDatasetsPlugin):
         return True
 
     def package_types(self):
-        return []
+        return ['dataset']
 
     def create_package_schema(self):
         schema = default_create_package_schema()
