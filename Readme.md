@@ -1,5 +1,6 @@
+```
 ckan.plugins = ... pages fluent scheming_datasets ottawa_theme wet_theme
-
+```
 
 Migrations from CKAN 1.8
 ------------------------
