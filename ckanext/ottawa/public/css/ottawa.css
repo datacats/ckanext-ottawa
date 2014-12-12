@@ -553,6 +553,7 @@ main {
 
 .main-content {
     background-color: white;
+    min-height:500px;
 }
 
 .pagination li{
@@ -598,10 +599,11 @@ footer{
 .pages {
     font-size: 16px;
     line-height: 1.5em;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .pages-wrap{
-    background: white;
     margin-left: 1px;
     margin-right: 15px;
 }
