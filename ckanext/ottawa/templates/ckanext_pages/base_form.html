@@ -24,12 +24,6 @@
 {% set data = data or {} %}
 {% set errors = errors or {} %}
 
-{% if not page %}
-  <h1>{{ _('Add page') }}</h1>
-{% else %}
-  <h1>{{ _('Edit page') }}</h1>
-{% endif %}
-
 <form class="form-inline" method="post" action="{{ action_url }}" data-module="basic-form">
 
   {{ form.input('title', id='field-title', label=_('Title'), placeholder=_('eg. Page Title'), value=data.title, error=errors.title, classes=['control-full', 'control-large'], attrs={'data-module': 'slug-preview-target'}) }}

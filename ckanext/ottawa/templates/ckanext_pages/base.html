@@ -1,0 +1,19 @@
+{% extends 'page.html' %}
+
+{% block page_header %}{% endblock %}
+
+{% block secondary_content %}
+  <div class="panel panel-default">
+    <header class="panel-heading">
+        <h3 class="panel-title">
+          <i class="fa fa-info-circle"></i>
+          {{ _('What are Pages?') }}
+        </h2>
+    </header>
+    <div class="panel-body">
+      {% trans %}
+        <p>Pages are are simple way to add extra pages to your ckan instance. You can assign an order to them.</p>
+      {% endtrans %}
+    </div>
+  </div>
+{% endblock %}
