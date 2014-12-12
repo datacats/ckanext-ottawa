@@ -575,3 +575,18 @@ footer{
     margin-top:15px;
     background-color: white;
 }
+
+/*Get our ckanext-pages icon to work without altering the ext source */
+.icon-file{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file:before{
+    content: "\f15b";
+}
