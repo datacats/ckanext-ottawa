@@ -5,8 +5,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{{ h.url_for_static('/css/ottawa.css') }}" />
 {% endblock %}
 
-{% block links %}
-    {{super()}}
+{% block favicon %}
     <!--[if gte IE 9 | !IE ]><!-->
     <link href="{{ h.url_for_static('/img/favicon.ico') }}" rel="icon" type="image/x-icon"/>
     <!--<![endif]-->

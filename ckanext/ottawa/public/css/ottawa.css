@@ -608,5 +608,7 @@ footer{
     margin-right: 15px;
 }
 
-
+.editable{
+    min-height: 300px;
+}
 /* end ckanext-pages additions */
