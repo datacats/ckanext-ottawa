@@ -4,16 +4,16 @@
 <h2>{{ _('1 page') if pages_total == 1 else _('{0} pages').format(pages_total) }}</h2>
 <hr>
 {% if pages %}
-  <ul class="dataset-list unstyled">
+  <div class="list-group">
     {% for page in pages %}
       {% if type %}
         {% set url = h.url_for(controller='ckanext.pages.controller:PagesController', action=action, id=id, page='/' + page.name) %}
       {% else %}
         {% set url = h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='/' + page.name) %}
       {% endif %}
-      <li class="dataset-item">
+      <a href="{{ url }}" class="list-group-item">
         <h3 class="dataset-heading">
-          <a href="{{ url }}" >{{ page.title }}</a>
+          {{ page.title }}
         </h3>
         {% if page.content %}
           {% if h.wysiwyg() %}
@@ -26,7 +26,7 @@
         {% else %}
           <p class="empty">{{ _('This page currently has no content') }}</p>
         {% endif %}
-      </li>
+      </a>
     {% endfor %}
   </ul>
 {% else %}
