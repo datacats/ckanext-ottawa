@@ -1,16 +1,17 @@
 
-# In[153]:
+# In[31]:
 
 import ckanapi
+import markdown
 
 
-# In[172]:
+# In[46]:
 
 ckan = ckanapi.RemoteCKAN("http://data.ottawa.ca/", apikey="...")
-ckan_v2 = ckanapi.RemoteCKAN("http://localhost/", apikey="...")
+ckan_v2 = ckanapi.RemoteCKAN("http://boot2docker/", apikey="...")
 
 
-# In[173]:
+# In[47]:
 
 #move groups to organizations
 groups = ckan.action.group_list()
@@ -28,7 +29,7 @@ for name in groups:
     print "Created Organization {0}".format(group_v2['name'])
 
 
-# In[183]:
+# In[48]:
 
 packages = ckan.action.package_list()
 
@@ -45,16 +46,21 @@ for name in packages:
         'owner_org': group,
         'maintainer': package['maintainer'],
         'maintainer_email': package['maintainer_email'],
-        'frequency': {'en': package['update_frequency'].replace('"', ''), 'fr': package['frequence_a_jour'].replace('"', '').decode('unicode-escape')},
+        'frequency': {'en': package['update_frequency'].replace('"', ''),
+                      'fr': package['frequence_a_jour'].replace('"', '').decode('unicode-escape')},
         'author': package['author'],
         'author_email': package['author_email'],
-        'description': {'en': package['notes'].replace('"', ''), 'fr': package['resume'].replace('"', '').decode('unicode-escape')},
+        'description': {'en': markdown.markdown(package['notes'].replace('"', '').replace("\\r", '').replace("\\n", '\n')),
+                        'fr': markdown.markdown(package['resume'].replace('"', '').decode('unicode-escape'))},
         'resources': package['resources'],
-        'accuracy': {'en': package['accuracy'].replace('"', ''), 'fr': package['exactitude'].replace('"', '').decode('unicode-escape')},
+        'accuracy': {'en': markdown.markdown(package['accuracy'].replace('"', '').replace("\\r", '').replace("\\n", '\n')),
+                     'fr': markdown.markdown(package['exactitude'].replace('"', '').decode('unicode-escape'))},
         'date_published': package['date_published'].replace('"', ''),
-        'title': {'en': package['title'], 'fr': package['titre'].replace('"', '').decode('unicode-escape')},
+        'title': {'en': package['title'].replace('"', ''),
+                  'fr': package['titre'].replace('"', '').decode('unicode-escape')},
         'name': package['name'],
-        'attributes': {'en': package['attributes'].replace('"', ''), 'fr': package['supplementaires'].replace('"', '').decode('unicode-escape')}
+        'attributes': {'en': markdown.markdown(package['attributes'].replace('"', '').replace("\\r", '').replace("\\n", '\n')),
+                       'fr': markdown.markdown(package['supplementaires'].replace('"', '').decode('unicode-escape'))}
     }
 
     try:
