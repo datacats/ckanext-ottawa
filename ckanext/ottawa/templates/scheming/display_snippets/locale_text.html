@@ -2,6 +2,6 @@
 <dl>
 {%- if h.lang() in field.form_languages -%}
   {%- if values.get(h.lang()) -%}
-    <dd>{{ values[h.lang()] }}</dd>
+    <dd>{{ values[h.lang()] | safe}}</dd>
   {%- endif -%}
 {%- endif -%}

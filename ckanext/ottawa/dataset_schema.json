@@ -30,7 +30,7 @@
     "validators": "fluent_text",
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
-    "form_snippet": "fluent_markdown.html",
+    "form_snippet": "richtext.html",
     "form_placeholder": "eg. Description or other useful notes about the data",
     "display_snippet": "locale_text.html"
   }, {
@@ -62,7 +62,7 @@
     "validators": "fluent_text unicode",
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
-    "form_snippet": "fluent_markdown.html",
+    "form_snippet": "richtext.html",
     "form_placeholder": "Notes on Data Accuracy",
     "display_snippet": "locale_text.html"
   }, {
@@ -74,7 +74,7 @@
     "validators": "fluent_text",
     "output_validators": "fluent_text_output",
     "form_languages": ["en", "fr"],
-    "form_snippet": "fluent_markdown.html",
+    "form_snippet": "richtext.html",
     "form_placeholder": "eg. Definitions of Table Columns, etc...",
     "display_snippet": "locale_text.html"
   }, {
@@ -143,7 +143,7 @@
   }, {
     "field_name": "description",
     "label": "Description",
-    "form_snippet": "markdown.html",
+    "form_snippet": "richtext.html",
     "form_placeholder": "Some useful notes about the data"
   }, {
     "field_name": "format",

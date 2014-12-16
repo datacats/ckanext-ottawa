@@ -1,0 +1,11 @@
+{%- for lang in field.form_languages -%}
+<div class="control-group richtext">
+    <label for="field-{{field.field_name}}-editor-{{lang}}">{{lang|upper}} {{h.scheming_language_text(field.label)}}</label>
+    <div class="controls">
+        <div class="editable" id='field-{{field.field_name}}-editor-{{lang}}'>
+            {{ data.get(field.field_name, {})[lang] | safe}}
+        </div>
+        <input type="hidden" name="{{field.field_name}}-{{lang}}" value="{{ data.get(field.field_name, {})[lang] | safe }}" />
+    </div>
+</div>
+{%- endfor -%}

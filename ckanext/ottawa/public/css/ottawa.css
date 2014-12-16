@@ -609,14 +609,27 @@ footer{
 }
 
 .editable{
-    min-height: 300px;
+    min-height: 150px;
     border: 1px solid #ccc;
     padding: 12px;
+}
+
+.editable h1, .editable h2, .editable h3, .editable h3{
+    margin-top: 0;
+}
+
+dd h1, dd h2, dd h3, dd h4{
+    margin-top: 0;
 }
 
 .wysiwyg label{
     font-size: 18px;
     margin-top:20px;
+}
+
+.wysiwyg .editable{
+    min-height: 300px;
+    margin-bottom: 15px;
 }
 /* end ckanext-pages additions */
 
