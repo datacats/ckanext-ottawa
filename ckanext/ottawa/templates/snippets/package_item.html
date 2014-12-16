@@ -20,7 +20,7 @@
 
     <div class="panel-body">
     {% block banner %}{{ super() }}{% endblock %}
-    {% block notes %}{{ super() }}{% endblock %}
+    {% block notes %}{{ package['description'][client_lang] | striptags | truncate }}{% endblock %}
     {% block publisher_info %}{% endblock %}
     {% block resources %}
       {% if package.resources and not hide_resources %}
