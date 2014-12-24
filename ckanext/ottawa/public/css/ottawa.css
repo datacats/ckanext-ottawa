@@ -641,3 +641,12 @@ dd h1, dd h2, dd h3, dd h4{
     position: absolute;
     width: 1px;
 }
+
+h3{
+    margin-top: 18px;
+}
+
+
+.ckanext-datapreview > iframe{
+    height: 680px;
+}
