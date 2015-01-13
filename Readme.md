@@ -14,6 +14,8 @@ ckanext.pages.wysiwyg = True
 ckan.max_resource_size = 100
 
 ckan.site_url = http://must_be_set_to_proper_site_url.com
+
+licenses_group_url = http://path.to.ottawa.license
 ```
 
 Migrations from CKAN 1.8
