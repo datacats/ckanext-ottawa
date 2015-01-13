@@ -12,6 +12,8 @@ scheming.dataset_schemas = ckanext.ottawa:dataset_schema.json
 ckanext.pages.wysiwyg = True
 
 ckan.max_resource_size = 100
+
+ckan.site_url = http://must_be_set_to_proper_site_url.com
 ```
 
 Migrations from CKAN 1.8

@@ -25,13 +25,13 @@
 {% endblock %}
 
 {% block wet_search_box %}
-<div id="wb-sttl" class="col-md-8">
+<div id="wb-sttl" class="col-md-7">
     {% block site_title %}
     <a href="/"> <img src="/img/ottawalogo.png" width="158" height="67" alt="City of Ottawa"> </a>
     {% endblock %}
 </div>
 
-<section id="wb-srch" class="col-md-4 visible-md visible-lg"><h2>{{ _("Search") }}</h2>
+<section id="wb-srch" class="col-md-5 visible-md visible-lg"><h2>{{ _("Search") }}</h2>
     <form method="get" action="{% url_for controller='package', action='search' %}" role="search" class="form-inline">
         <div class="form-group"><label for="wb-srch-q">{{ _("Search Your Data") }}</label>
             <input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150"/>
