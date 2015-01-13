@@ -650,3 +650,7 @@ h3{
 .ckanext-datapreview > iframe{
     height: 680px;
 }
+
+.js-hide{
+    display:none;
+}
