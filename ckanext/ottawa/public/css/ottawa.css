@@ -654,3 +654,8 @@ h3{
 .js-hide{
     display:none;
 }
+
+.badge a{
+    color: white;
+    text-decoration: none;
+}

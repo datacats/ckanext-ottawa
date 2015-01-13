@@ -30,7 +30,7 @@
           <div class="col-md-9">
             <ul class="list-inline list-unstyled">
               {% for resource in h.dict_list_reduce(package.resources, 'format') %}
-                <li><span class="badge">{{ resource }}</span></li>
+                <li><span class="badge"><a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" data-format="{{ resource.lower() }}">{{ resource }}</a></span></li>
               {% endfor %}
             </ul>
           </div>
