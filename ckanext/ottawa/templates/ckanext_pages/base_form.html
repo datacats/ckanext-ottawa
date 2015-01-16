@@ -52,8 +52,8 @@
   <div class="form-group mrgn-tp-sm" >
       <label for="field-lang" class="control-label">{{ _('Language') }}</label>
       <select id="field-lang" class="form-control" name="lang">
-          {% for option in [('en','en'), ('fr','fr')] %}
-          <option value="{{ option[0] }}" {% if option[0] == data.lang %}selected="selected"{% endif %}>{{ option[1] }}</option>
+          {% for option in h.get_available_locales() %}
+          <option value="{{ option.language }}" {% if option.language == data.lang %}selected="selected"{% endif %}>{{ option.language }}</option>
           {% endfor %}
       </select>
   </div>
