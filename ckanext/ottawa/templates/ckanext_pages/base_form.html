@@ -49,6 +49,14 @@
       </select>
   </div>
   {% endif %}
+  <div class="form-group mrgn-tp-sm" >
+      <label for="field-lang" class="control-label">{{ _('Language') }}</label>
+      <select id="field-lang" class="form-control" name="lang">
+          {% for option in [('en','en'), ('fr','fr')] %}
+          <option value="{{ option[0] }}" {% if option[0] == data.lang %}selected="selected"{% endif %}>{{ option[1] }}</option>
+          {% endfor %}
+      </select>
+  </div>
 
   <br/>
   {{ form.prepend('name', id='field-name', label=_('URL'), prepend=slug_prefix, placeholder=_('eg. my-page'), value=data.name, error=errors.name, attrs=attrs) }}
