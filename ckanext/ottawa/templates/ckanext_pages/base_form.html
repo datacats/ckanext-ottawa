@@ -18,7 +18,6 @@
   {% set cancel_url = h.url_for('pages_show', page='') %}
   {% set slug_prefix = cancel_url ~ '/' %}
   {% set slug_domain = h.url_for('pages_show', page='', qualified=true) %}
-  {% set hide_field_order = true %}
 {% endif %}
 
 {% set data = data or {} %}
@@ -31,17 +30,6 @@
   {% set domain = slug_domain|replace("http://", "")|replace("https://", "") %}
   {% set attrs = {'data-module': 'slug-preview-slug', 'data-module-prefix': domain~'/', 'data-module-placeholder': '<page>'} %}
 
-  {% if not hide_field_order %}
-    <div class="form-group">
-      <label for="field-order" class="control-label">{{ _('Menu Order') }}</label>
-        <select id="field-order" class="form-control" name="order">
-          {% for option in [('',''), ('1','1'), ('2', '2'), ('3', '3') , ('4', '4')] %}
-          <option value="{{ option[0] }}" {% if option[0] == data.order %}selected="selected"{% endif %}>{{ option[1] }}</option>
-          {% endfor %}
-        </select>
-    </div>
-  {% endif %}
-
   <div class="form-group">
     <label for="field-private" class="control-label wb-inv">{{ _('Visibility') }}</label>
       <select id="field-private" class="form-control" name="private">
@@ -50,6 +38,17 @@
         {% endfor %}
       </select>
   </div>
+  <br/>
+  {% if not hide_field_order %}
+  <div class="form-group mrgn-tp-sm" >
+      <label for="field-order" class="control-label">{{ _('Menu Order') }}</label>
+      <select id="field-order" class="form-control" name="order">
+          {% for option in [('',''), ('1','1'), ('2', '2'), ('3', '3') , ('4', '4')] %}
+          <option value="{{ option[0] }}" {% if option[0] == data.order %}selected="selected"{% endif %}>{{ option[1] }}</option>
+          {% endfor %}
+      </select>
+  </div>
+  {% endif %}
 
   <br/>
   {{ form.prepend('name', id='field-name', label=_('URL'), prepend=slug_prefix, placeholder=_('eg. my-page'), value=data.name, error=errors.name, attrs=attrs) }}
