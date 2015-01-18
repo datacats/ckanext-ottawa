@@ -659,3 +659,11 @@ h3{
     color: white;
     text-decoration: none;
 }
+
+.social img{
+    margin-right: 10px;
+}
+
+.social a{
+    text-decoration: none;
+}
