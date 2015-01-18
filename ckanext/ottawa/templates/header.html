@@ -1,5 +1,9 @@
 {% ckan_extends %}
 
+{%- block pre_top_nav -%}
+    <a href="http://ottawa.ca"><img src="/img/ottawalogo.png" style="height:30px"/></a>
+{%- endblock -%}
+
 {% block header_account_logged %}
 <li>
     <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='pages_show', page='') }}" title="{{ _('Pages') }}">
