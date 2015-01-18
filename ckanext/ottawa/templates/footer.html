@@ -1,38 +1,58 @@
 
 {% block footer_content %}
 <footer role="contentinfo" id="wb-info wb-foot" class="visible-sm visible-md visible-lg wb-navcurr">
-  <div class="container">
+    <div class="container">
 
-    <nav role="navigation" class="row"><h2>{% set api_url = 'http://docs.ckan.org/{0}/{1}/api.html'.format(request.environ.CKAN_LANG, g.ckan_doc_version) %}</h2>
-      <section class="col-sm-4">
-          <div class="boxes-box-content">
-              <div class="logo">
-                  <img src="{{ h.url_for_static('/img/footer-ottawalogo.png') }}" class="mrgn-bttm-md" alt="Ottawa Logo" width="107" height="47">
-                  <p>© 2001-2014 City of Ottawa</p>
-                  <p>110 Laurier Avenue West <br> Ottawa, Ontario, K1P 1J1</p>
-              </div>
-          </div>
-      </section>
-      <section class="col-sm-4"><h3>{{ _('News') }}</h3>
-          <ul class="list-unstyled">
-            <li><a href="#">{{ _('FAQ') }}</a></li>
-            <li><a href="#">{{ _('Privacy') }}</a></li>
-            <li><a href="#">{{ _('Contact us') }}</a></li>
-            <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
-          </ul>
-      </section>
-      <section class="col-sm-4"><h3>{{ _('Powered by')}}</h3>
-          <ul class="list-unstyled">
-            <li><a rel="external" href="http://ckan.org">CKAN</a></li>
-          </ul>
-      </section>
-    </nav>
-  </div>
-{% block footer_debug %}
-  {% if g.debug %}
+        <nav role="navigation" class="row"><h2>{% set api_url = 'http://docs.ckan.org/{0}/{1}/api.html'.format(request.environ.CKAN_LANG, g.ckan_doc_version) %}</h2>
+            <section class="col-sm-4">
+                <div class="boxes-box-content">
+                    <div class="logo">
+                        <img src="{{ h.url_for_static('/img/footer-ottawalogo.png') }}" class="mrgn-bttm-md" alt="Ottawa Logo" width="107" height="47">
+                        <p>© 2001-2014 City of Ottawa</p>
+                        <p>110 Laurier Avenue West <br> Ottawa, Ontario, K1P 1J1</p>
+                    </div>
+                </div>
+            </section>
+            <section class="col-sm-4">
+                <div class="call mrgn-tp-xl">
+                    <p>Call <strong>3-1-1 </strong>or visit your local <a href="/en/city-hall/your-city-government/contact-city-ottawa/client-service-centres">Client Service Centre</a> <br>for service in more than 170 languages</p>
+                </div></center></div></div>
+            </section>
+            <section class="col-sm-4">
+                <div class="span-2">
+                    <div id="block-boxes-city-of-ottawa-footer-right" class="block block-boxes block-boxes-wetkit_box no-title odd last block-count-5 block-region-footer block-city-of-ottawa-footer-right">
+                        <div id="boxes-box-city_of_ottawa_footer_right" class="boxes-box"><div class="boxes-box-content">
+                            <div class="social">
+                                <a href="https://twitter.com/ottawacity">
+                                    <img src="http://ottawa.ca/sites/all/themes/cityott_adaptivetheme/images/twitter.png" alt="Twitter" width="30" height="24">
+                                </a>
+                                <a href="https://www.facebook.com/cityofottawa">
+                                    <img src="http://ottawa.ca/sites/default/files/facebook_logo_0.png" alt="facebook" width="24" height="24">
+                                </a>
+                                <a href="http://www.youtube.com/user/cityottawa">
+                                    <img src="http://ottawa.ca/sites/default/files/youtube.png" alt="Youtube" width="24" height="24" class="image-actual">
+                                </a>
+                                <a href="http://instagram.com/cityofottawa">
+                                    <img src="http://ottawa.ca/sites/default/files/instagram_logo.png" alt="Instagram icon" width="24" height="24">
+                                </a>
+                                <a href="http://www.flickr.com/photos/cityofottawa">
+                                    <img src="http://ottawa.ca/sites/all/themes/cityott_adaptivetheme/images/flickr.png" alt="Flickr" width="24" height="24">
+                                </a>
+                                <a href="/en/rss-feeds">
+                                    <img src="http://ottawa.ca/sites/all/themes/cityott_adaptivetheme/images/sub.png" alt="Subscription" width="25" height="24">
+                                </a>
+                            <p><a href="http://ottawa.ca/en/node/297237">Access the city’s social media streams</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </div>
+    {% block footer_debug %}
+    {% if g.debug %}
     {% include 'snippets/debug.html' %}
-  {% endif %}
-{% endblock %}
+    {% endif %}
+    {% endblock %}
 </footer>
 
 {% endblock %}
