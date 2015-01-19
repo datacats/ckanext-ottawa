@@ -37,7 +37,7 @@ class OttawaThemePlugin(p.SingletonPlugin):
 def _filter_resource_tags(package):
     """
     Returns resource links for a package such that any resource with a unique
-    format returns a link to the resource, and any link with a non-unique format
+    format returns a link to the resource, and any link with a duplicate format
     returns a link to the package page.
     """
     res_list = []
