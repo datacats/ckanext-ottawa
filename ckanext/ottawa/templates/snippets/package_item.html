@@ -29,8 +29,8 @@
           <div class="col-md-3"><em>{{ _('Resource Formats') }}:</em></div>
           <div class="col-md-9">
             <ul class="list-inline list-unstyled">
-              {% for resource in h.dict_list_reduce(package.resources, 'format') %}
-                <li><span class="badge"><a href="{{ h.url_for(controller='package', action='read', id=package.name) }}" data-format="{{ resource.lower() }}">{{ resource }}</a></span></li>
+              {% for resource in h.resource_tags(package) %}
+                <li><span class="badge"><a href="{{ resource['url'] }}" data-format="{{ resource['format'].lower() }}">{{ resource['format'] }}</a></span></li>
               {% endfor %}
             </ul>
           </div>
