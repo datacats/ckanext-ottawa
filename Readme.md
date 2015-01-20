@@ -1,5 +1,5 @@
 ```
-ckan.plugins = ... resource_proxy geojson_preview webhooks ottawa_theme pages fluent scheming_datasets scheming_groups wet_theme
+ckan.plugins = ... resource_proxy geojson_preview webhooks ottawa_theme pages fluent scheming_datasets scheming_groups scheming_organizations wet_theme
 
 ckanext.webhooks.eventloop = http://192.168.1.107:8765
 ckan.datapusher.url      = http://192.168.1.107:8800
@@ -9,6 +9,7 @@ wet_theme.geo_map_type = static
 
 scheming.dataset_schemas = ckanext.ottawa:dataset_schema.json
 scheming.group_schemas = ckanext.ottawa:group_schema.json
+scheming.organization_schemas = ckanext.ottawa:org_schema.json
 
 ckanext.pages.wysiwyg = True
 
