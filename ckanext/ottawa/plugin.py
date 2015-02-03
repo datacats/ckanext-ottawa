@@ -34,7 +34,8 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
     def form_to_db_schema(self):
         schema =  group_form_schema()
         schema.update({
-            'title_fr': [ignore_missing, unicode, convert_to_extras]
+            'title_fr': [ignore_missing, unicode, convert_to_extras],
+            'description_fr': [ignore_missing, unicode, convert_to_extras]
         })
 
         return schema
@@ -42,7 +43,8 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
     def db_to_form_schema(self):
         schema = group_form_schema()
         schema.update({
-            'title_fr': [convert_from_extras, ignore_missing]
+            'title_fr': [convert_from_extras, ignore_missing],
+            'description_fr': [convert_from_extras, ignore_missing]
         })
 
         return schema

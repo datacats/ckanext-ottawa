@@ -20,6 +20,7 @@
         {{ form.prepend('name', label=_('URL'), prepend=prefix, id='field-url', placeholder=_('my-group'), value=data.name, error=errors.name, attrs=attrs, is_required=true) }}
 
         {{ form.markdown('description', label=_('Description'), id='field-description', placeholder=_('A little information about my group...'), value=data.description, error=errors.description) }}
+        {{ form.markdown('description_fr', label=_('Description (FR)'), id='field-description-fr', placeholder=_('A little information about my group...'), value=data.description_fr, error=errors.description_fr) }}
 
         {% set is_upload = data.image_url and not data.image_url.startswith('http') %}
         {% set is_url = data.image_url and data.image_url.startswith('http') %}
