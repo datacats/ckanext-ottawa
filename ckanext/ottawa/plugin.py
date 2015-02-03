@@ -4,7 +4,7 @@ import json
 import logging
 
 from ckan.plugins.interfaces import IDatasetForm
-from ckan.lib.plugins import DefaultDatasetForm
+from ckan.lib.plugins import DefaultDatasetForm, DefaultGroupForm
 from ckan.logic.schema import default_create_package_schema, group_form_schema
 from ckan.lib.navl.validators import ignore_missing
 from ckan.new_authz import is_sysadmin
@@ -13,7 +13,7 @@ from ckanext.scheming.plugins import SchemingDatasetsPlugin
 
 log = logging.getLogger(__name__)
 
-class OttawaGroupPlugin(p.SingletonPlugin):
+class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
     p.implements(p.IGroupForm, inherit=True)
     p.implements(p.IConfigurer, inherit=True)
 
@@ -24,7 +24,7 @@ class OttawaGroupPlugin(p.SingletonPlugin):
         return False
 
     def group_types(self):
-        return ['group']
+        return ['group2']
 
     def group_form(self):
         return 'group/ottawa_form.html'
