@@ -9,6 +9,8 @@
         {% set attrs = {'data-module': 'slug-preview-target'} %}
         {{ form.input('title', label=_('Name'), id='field-name', placeholder=_('My Group'), value=data.title, error=errors.title, classes=['control-full'], attrs=attrs) }}
 
+        {{ form.input('title_fr', label=_('Name (FR)'), id='field-name-fr', placeholder=_('My Group'), value=data.title_fr, error=errors.title_fr, classes=['control-full'], attrs=attrs) }}
+
         {# Perhaps these should be moved into the controller? #}
         {% set prefix = h.url_for(controller='group', action='read', id='') %}
         {% set domain = h.url_for(controller='group', action='read', id='', qualified=true) %}

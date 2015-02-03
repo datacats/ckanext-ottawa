@@ -9,6 +9,8 @@ from ckan.logic.schema import default_create_package_schema, group_form_schema
 from ckan.lib.navl.validators import ignore_missing
 from ckan.new_authz import is_sysadmin
 from ckan.logic.validators import name_validator
+from ckan.logic.converters import convert_to_extras, convert_from_extras
+from ckan.lib.navl.validators import ignore_missing, not_empty
 from ckanext.scheming.plugins import SchemingDatasetsPlugin
 
 log = logging.getLogger(__name__)
@@ -21,19 +23,29 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
         p.toolkit.add_template_directory(config, 'templates')
 
     def is_fallback(self):
-        return False
+        return True
 
     def group_types(self):
-        return ['group2']
+        return ['group']
 
     def group_form(self):
         return 'group/ottawa_form.html'
 
     def form_to_db_schema(self):
-        return group_form_schema()
+        schema =  group_form_schema()
+        schema.update({
+            'title_fr': [ignore_missing, unicode, convert_to_extras]
+        })
+
+        return schema
 
     def db_to_form_schema(self):
-        return {}
+        schema = group_form_schema()
+        schema.update({
+            'title_fr': [convert_from_extras, ignore_missing]
+        })
+
+        return schema
 
     def setup_template_variables(self, context, data_dict):
         pass
