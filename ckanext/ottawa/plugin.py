@@ -4,7 +4,7 @@ import json
 import logging
 
 from ckan.plugins.interfaces import IDatasetForm
-from ckan.lib.plugins import DefaultDatasetForm, DefaultGroupForm
+from ckan.lib.plugins import DefaultDatasetForm, DefaultGroupForm, DefaultOrganizationForm
 from ckan.logic.schema import default_create_package_schema, group_form_schema
 from ckan.lib.navl.validators import ignore_missing
 from ckan.new_authz import is_sysadmin
@@ -27,6 +27,43 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
 
     def group_types(self):
         return ['group']
+
+    def group_form(self):
+        return 'group/ottawa_form.html'
+
+    def form_to_db_schema(self):
+        schema =  group_form_schema()
+        schema.update({
+            'title_fr': [ignore_missing, unicode, convert_to_extras],
+            'description_fr': [ignore_missing, unicode, convert_to_extras]
+        })
+
+        return schema
+
+    def db_to_form_schema(self):
+        schema = group_form_schema()
+        schema.update({
+            'title_fr': [convert_from_extras, ignore_missing],
+            'description_fr': [convert_from_extras, ignore_missing]
+        })
+
+        return schema
+
+    def setup_template_variables(self, context, data_dict):
+        pass
+
+class OttawaOrgPlugin(p.SingletonPlugin, DefaultOrganizationForm):
+    p.implements(p.IGroupForm, inherit=True)
+    p.implements(p.IConfigurer, inherit=True)
+
+    def update_config(self, config):
+        p.toolkit.add_template_directory(config, 'templates')
+
+    def is_fallback(self):
+        return False
+
+    def group_types(self):
+        return ['organization']
 
     def group_form(self):
         return 'group/ottawa_form.html'

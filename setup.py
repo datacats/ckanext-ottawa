@@ -27,5 +27,6 @@ setup(
         # Add plugins here, e.g.
         ottawa_theme=ckanext.ottawa.plugin:OttawaThemePlugin
         ottawa_group=ckanext.ottawa.plugin:OttawaGroupPlugin
+        ottawa_org=ckanext.ottawa.plugin:OttawaOrgPlugin
     ''',
 )
