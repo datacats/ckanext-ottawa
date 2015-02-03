@@ -1,5 +1,13 @@
 {% ckan_extends %}
 
+{% block subtitle %}
+    {% if h.lang() == 'fr' %}
+        {{ c.group_dict.title_fr }} - {{ _('Organizations') }}
+    {% else %}
+        {{ c.group_dict.display_name }} - {{ _('Organizations') }}
+    {% endif %}
+{% endblock %}
+
 {% block content_primary_nav %}
     {% if h.check_access('organization_update', {'id': c.group_dict.id}) %}
         <li>{% link_for _('Manage'), controller='organization', action='edit', id=c.group_dict.name, icon='wrench' %}</li>

@@ -21,7 +21,13 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             {% block heading %}
-            <span class="heading">{{ organization.title or organization.name }}
+            <span class="heading">
+                {% if h.lang() == 'fr' %}
+                    {{ organization.title_fr or organization.name}}
+                {% else %}
+                    {{ organization.title or organization.name }}
+                {% endif %}
+
                 {% if organization.state == 'deleted' %}
                 [{{ _('Deleted') }}]
                 {% endif %}
