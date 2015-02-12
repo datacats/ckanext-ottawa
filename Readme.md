@@ -4,13 +4,16 @@ ckan.plugins = ... resource_proxy geojson_preview webhooks ottawa_theme pages fl
 ckanext.webhooks.eventloop = http://192.168.1.107:8765
 ckan.datapusher.url      = http://192.168.1.107:8800
 
-wet_theme.url = http://boot2docker:5698/theme-base
+ckan.views.default_views = geojson_view
+
+wet_theme.url = /theme-base
 wet_theme.geo_map_type = static
 
 scheming.dataset_schemas = ckanext.ottawa:dataset_schema.json
 
 ckanext.pages.wysiwyg = True
 
+ckan.resource_proxy.max_file_size = 10485760
 ckan.max_resource_size = 100
 
 ckan.site_url = http://must_be_set_to_proper_site_url.com
