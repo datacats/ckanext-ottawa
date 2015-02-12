@@ -36,7 +36,6 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
         schema.update({
             'title_fr': [ignore_missing, unicode, convert_to_extras],
             'description_fr': [ignore_missing, unicode, convert_to_extras],
-            'icon': [ignore_missing, unicode, convert_to_extras]
         })
 
         return schema
@@ -46,7 +45,6 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
         schema.update({
             'title_fr': [convert_from_extras, ignore_missing],
             'description_fr': [convert_from_extras, ignore_missing],
-            'icon': [convert_from_extras, ignore_missing]
         })
 
         return schema

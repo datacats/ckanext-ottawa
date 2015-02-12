@@ -7,3 +7,11 @@
         {{ c.group_dict.display_name }}
     {% endif %}
 {% endblock %}
+
+{% block content_primary_nav %}
+    {% if h.check_access('organization_update', {'id': c.group_dict.id}) %}
+        <li>{% link_for _('Manage'), controller='group', action='edit', id=c.group_dict.name, icon='wrench' %}</li>
+    {% endif %}
+
+    {{ super() }}
+{% endblock %}
