@@ -4,7 +4,7 @@ ckan.plugins = ... resource_proxy geojson_preview webhooks ottawa_theme pages fl
 ckanext.webhooks.eventloop = http://192.168.1.107:8765
 ckan.datapusher.url      = http://192.168.1.107:8800
 
-ckan.views.default_views = geojson_view
+ckan.views.default_views = geojson_view recline_grid_view
 
 wet_theme.url = /theme-base
 wet_theme.geo_map_type = static
@@ -22,6 +22,8 @@ licenses_group_url = http://path.to.ottawa.license
 
 ckan.locales_offered=en fr
 ```
+
+Relies on the following PR being merged: https://github.com/ckan/ckan/pull/2204
 
 Migrations from CKAN 1.8
 ------------------------
