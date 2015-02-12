@@ -17,9 +17,9 @@
     <section class="panel-body">
         {% block inner %}
         {% block image %}
-        <div class="image">
+        <div class="image" style="text-align:center;">
             <a href="{{ group.url }}">
-                <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" width="190" height="118" alt="{{ group.name }}" />
+                <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" width="120" height="120" alt="{{ group.name }}" />
             </a>
         </div>
         {% endblock %}
