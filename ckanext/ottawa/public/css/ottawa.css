@@ -667,3 +667,7 @@ h3{
 .social a{
     text-decoration: none;
 }
+
+figure.thumbnail {
+    margin-bottom:0;
+}

@@ -1,7 +1,16 @@
 {% set type = group.type or 'group' %}
 {% set url = h.url_for(type ~ '_read', action='read', id=group.name) %}
 {% block item %}
-<div class="{{ 'col-sm-6 col-md-4' if loop_items == 3 else 'col-sm-4 col-md-3' }}">
+
+{% if loop_items == 3 %}
+    {% set cls = 'col-sm-6 col-md-4'%}
+{% elif loop_items == 4 %}
+    {% set cls = 'col-sm-4 col-md-3'%}
+{% elif loop_items == 2 %}
+    {% set cls = 'col-sm-6'%}
+{% endif %}
+
+<div class="{{  cls  }}">
     <figure class="thumbnail" style="text-align:center; border:none;">
         {% block item_inner %}
             {% block image %}
