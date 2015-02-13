@@ -2,6 +2,7 @@ import ckan.plugins as p
 import ckan.lib.helpers as h
 import json
 import logging
+import ckanapi
 
 from ckan.plugins.interfaces import IDatasetForm
 from ckan.lib.plugins import DefaultDatasetForm, DefaultGroupForm, DefaultOrganizationForm
@@ -107,8 +108,18 @@ class OttawaThemePlugin(p.SingletonPlugin):
 
     def get_helpers(self):
         return {
-            'resource_tags': _filter_resource_tags
+            'resource_tags': _filter_resource_tags,
+            'groups': _home_groups
         }
+
+def _home_groups():
+    gps = []
+    ckan = ckanapi.LocalCKAN()
+    groups = ckan.action.group_list()
+    for g in groups:
+        gps.append(ckan.action.group_show(id=g))
+
+    return gps
 
 def _filter_resource_tags(package):
     """
