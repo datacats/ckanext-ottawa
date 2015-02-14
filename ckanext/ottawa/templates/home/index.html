@@ -3,7 +3,7 @@
 {% block content %}
   <div class="container">
     <div class="row" style="margin-right:0;">
-      <div class="col-md-8 main-content">
+      <div class="col-md-9 main-content">
           <main role="main" property="mainContentOfPage">
 
           {% block flash %}
@@ -22,10 +22,12 @@
           </main>
         </div>
 
-        <div class="col-md-3 mrgn-lft-lg panel panel-default">
+        <div class="col-md-3">
+          <div class="mrgn-lft-md panel panel-default panel-body">
             {% for group in h.groups()[0:8] %}
             {% snippet "group/snippets/group_item.html", group=group, position=loop.index, loop_items=2 %}
             {% endfor %}
+          </div>
         </div>
 
       </div>
