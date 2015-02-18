@@ -14,7 +14,7 @@
     <figure class="thumbnail" style="text-align:center; border:none;">
         {% block item_inner %}
             {% block image %}
-                <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image">
+                <a href="{{ url }}"><img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" alt="{{ group.name }}" class="media-image"></a>
             {% endblock %}
 
             {% block title %}
