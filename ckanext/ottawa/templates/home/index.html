@@ -3,7 +3,7 @@
 {% block content %}
   <div class="container">
     <div class="row" style="margin-right:0;">
-      <div class="col-md-9 main-content">
+      <div class=" main-content col-md-9">
           <main role="main" property="mainContentOfPage">
 
           {% block flash %}
@@ -18,12 +18,33 @@
           {% endif %}
           {% endblock flash %}
 
+          <div class="row">
+              <h3 style="text-align: center;">Featured Datasets</h3>
+              {% for feature_row in c.featured_views | batch(2) %}
+              <div class="row-fluid">
+                  {% for feature in feature_row %}
+                  <div class="col-md-6 ottawa-previews">
+                      <div class="well">
+                          {% set p = feature['package'] %}
+                          <h4>{{ h.link_to(h.truncate(h.title(p['title'], h.lang()), 80), h.url_for(controller='package', action='read', id=p.name)) }}</h4>
+                          {% snippet 'package/snippets/resource_view.html',
+                          resource_view = feature['view'],
+                          resource = feature['resource'],
+                          package = p
+                          %}
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+              {% endfor %}
+          </div>
 
           </main>
         </div>
 
         <div class="col-md-3">
           <div class="mrgn-lft-md panel panel-default panel-body">
+            <h3 style="text-align:center;">{{_('Search by Group')}}</h3>
             {% for group in h.groups()[0:8] %}
             {% snippet "group/snippets/group_item.html", group=group, position=loop.index, loop_items=2 %}
             {% endfor %}

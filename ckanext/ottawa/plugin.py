@@ -109,8 +109,12 @@ class OttawaThemePlugin(p.SingletonPlugin):
     def get_helpers(self):
         return {
             'resource_tags': _filter_resource_tags,
-            'groups': _home_groups
+            'groups': _home_groups,
+            'title': _title_from_solr
         }
+
+def _title_from_solr(title_str, lang):
+    return json.loads(title_str)[lang]
 
 def _home_groups():
     gps = []

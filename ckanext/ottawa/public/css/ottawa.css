@@ -648,7 +648,7 @@ h3{
 
 
 .ckanext-datapreview > iframe{
-    height: 680px;
+    height: 500px;
 }
 
 .js-hide{
@@ -670,4 +670,9 @@ h3{
 
 figure.thumbnail {
     margin-bottom:0;
+}
+
+.ottawa-previews h4 {
+    margin-top:0;
+    margin-bottom: 0;
 }
