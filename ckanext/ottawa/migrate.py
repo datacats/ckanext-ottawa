@@ -1,17 +1,18 @@
 
-# In[1]:
+# In[61]:
 
 import ckanapi
 import markdown
+import time
 
 
-# In[2]:
+# In[62]:
 
 ckan = ckanapi.RemoteCKAN("http://data.ottawa.ca/")
-ckan_v2 = ckanapi.RemoteCKAN("http://boot2docker:5698/", apikey="3067dd7b-945f-44f4-a090-3c990a4ccd83")
+ckan_v2 = ckanapi.RemoteCKAN("http://ottawadev.dcats.ca/", apikey="e427b14d-8cd3-4e9d-8cbe-3e03468cfea3")
 
 
-# In[15]:
+# In[63]:
 
 #move groups to organizations
 groups = ckan.action.group_list()
@@ -29,7 +30,25 @@ for name in groups:
     print "Created Organization {0}".format(group_v2['name'])
 
 
-# In[16]:
+# In[64]:
+
+#create new groups
+new_groups = {'city-hall': 'City Hall', 
+              'business-and-economy': 'Business & Economy', 
+              'demographics': 'Demographics', 
+              'environment': 'Environment', 
+              'geography-and-maps': 'Geography and Maps', 
+              'living': 'Living', 
+              'health-and-safety': 'Health and Safety', 
+              'planning-and-development': 'Planning & Development', 
+              'transportation': 'Transportation'}
+
+for g in new_groups:
+    group_dict = {'name': g, 'title': new_groups[g]}
+    ckan_v2.action.group_create(**group_dict)
+
+
+# In[65]:
 
 def import_packages(package_list):
     for name in package_list:
@@ -85,13 +104,25 @@ def import_packages(package_list):
         print "Created Package {0}".format(package_v2['name'])
 
 
-# In[18]:
+# In[66]:
 
 packages = ckan.action.package_list()
-import_packages(packages)
+for package in packages[1:]:
+    import_packages([package])
+    #uncomment next line if you want to stagger imports for fear of overloading datapusher
+    import time; time.sleep(5)
 
 
-# In[4]:
+# In[ ]:
+
+#files datastore has problems with:
+#http://data.ottawa.ca/storage/f/2014-09-29T190031/City-of-Ottawa-Drinking-Water-Data-Summary.zip
+#http://data.ottawa.ca/en/storage/f/2013-07-25T200519/2013-Q1-Operating-Status-Report.xlsx
+#http://data.ottawa.ca/en/storage/f/2013-09-17T135414/Open-Data-Q2-2013.xlsx
+#http://join.ottawa.ca/open_data/feeds/scheds - interesting one
+
+
+# In[67]:
 
 for p in ckan_v2.action.package_list():
     package = ckan_v2.action.package_show(id=p)

@@ -1,5 +1,5 @@
 ```
-ckan.plugins = ... resource_proxy geojson_preview webhooks ottawa_theme pages fluent scheming_datasets wet_theme
+ckan.plugins = ... datastore datapusher resource_proxy text_view recline_grid_view recline_graph_view geojsonview ottawa_theme fluent scheming_datasets wet_theme pages apihelper ottawa_group ottawa_org
 
 ckanext.webhooks.eventloop = http://192.168.1.107:8765
 ckan.datapusher.url      = http://192.168.1.107:8800
