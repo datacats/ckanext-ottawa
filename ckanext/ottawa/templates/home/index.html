@@ -19,7 +19,26 @@
           {% endblock flash %}
 
           <div class="row">
-              <h3 style="text-align: center;">Featured Datasets</h3>
+              <div class="col-md-12">
+                  <h3>{{_("Welcome to Ottawa's Open Data Catalogue")}}</h3>
+
+                  <p>
+                      This website is a source of data released by the City of Ottawa
+                      for free use by the public. Here are some of the things you
+                      can do to get started:
+                  </p>
+
+                  <ul>
+                      <li><a href="/dataset">Search</a> for the data you need</li>
+                      <li>Browse by <a href="/group">categories</a> or <a href="/organization">departments</a></li>
+                      <li>Explore the <a href="/api-helper">API</a></li>
+                      <li>Read the City of Ottawa <a href="http://ottawa.ca/en/mobile-apps-and-open-data/open-data-terms-use">Open Data Terms of Use</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="row">
+              <h3 style="text-align: center;">{{_('Featured Datasets')}}</h3>
               {% for feature_row in c.featured_views | batch(2) %}
               <div class="row-fluid">
                   {% for feature in feature_row %}

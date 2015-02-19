@@ -16,7 +16,7 @@
  */
 
 body {
-    font: 13px/18px "Arial",sans-serif;
+    font: 15px source-sans-pro, "Arial", sans-serif;
     background-color: #EDEDED;
 }
 
@@ -676,3 +676,15 @@ figure.thumbnail {
     margin-top:0;
     margin-bottom: 0;
 }
+
+.ottawa-previews a:visited{
+    color: #008375 !important;
+}
+
+/** Ottawa Style Guide **/
+
+h1, h2, h3, h4, h5 {
+    color: #008375;
+}
+
+/** End Ottawa Style Guide **/
