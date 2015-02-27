@@ -688,3 +688,11 @@ h1, h2, h3, h4, h5 {
 }
 
 /** End Ottawa Style Guide **/
+
+.form-actions {
+    margin-top: 10px;
+}
+
+.table {
+    margin-top: 10px;
+}
