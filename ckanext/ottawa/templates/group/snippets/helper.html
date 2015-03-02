@@ -4,12 +4,19 @@
             <h3 class="panel-title"><span class="fa fa-question-circle"></span> {{ _('What are Groups?') }}</h3>
         </header>
         <div class="panel-body">
-            {% trans %}
+            {% if h.lang() == 'fr' %}
+            Les groupes sont des ensembles de jeux de données dans une
+            communauté (par exemple, les données sur les libertés civiles) ou
+            un sujet (p. ex., transport, santé, environnement) ce qui permet
+            aux utilisateurs de naviguer plus facilement dans les jeux de
+            données par thèmes. Un jeu de données peut faire partie de
+            plusieurs groupes.
+            {% else %}
             Groups are collections of datasets under a community (for
             example, Civil Liberty data) or topic (e.g. Transport, Health,
             Environment) to make it easier for users to browse datasets by theme.
             A Datasets can be a part of multiple groups.
-            {% endtrans %}
+            {% endif %}
         </div>
     </div>
 </p>

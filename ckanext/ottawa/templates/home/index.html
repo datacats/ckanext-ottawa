@@ -19,8 +19,25 @@
           {% endblock flash %}
 
           <div class="row">
+              {% if h.lang() == 'fr' %}
               <div class="col-md-12">
-                  <h3>{{_("Welcome to Ottawa's Open Data Catalogue")}}</h3>
+                  <h3>Bienvenue dans le catalogue Données ouvertes de la Ville d’Ottawa</h3>
+
+                  <p>
+                      Ce site Web est une source pour les données publiées par la Ville d’Ottawa, pour un usage gratuit par
+                      le public. Voici certaines choses que vous pourriez faire pour commencer :
+                  </p>
+
+                  <ul>
+                      <li><a href="/fr/dataset">Chercher</a> les données dont vous avez besoin.</li>
+                      <li>Chercher par <a href="/fr/group">catégories</a> ou <a href="/fr/organization">services.</a></li>
+                      <li>Explorer <a href="/fr/api-helper">l’API.</a></li>
+                      <li>Lire les <a href="http://ottawa.ca/fr/applications-pour-appareils-mobiles-et-donnees-ouvertes/donnees-ouvertes-conditions-dutilisation">conditions d’utilisation</a> des données ouvertes de la Ville.</li>
+                  </ul>
+              </div>
+              {% else %}
+              <div class="col-md-12">
+                  <h3>Welcome to Ottawa's Open Data Catalogue"</h3>
 
                   <p>
                       This website is a source of data released by the City of Ottawa
@@ -35,10 +52,17 @@
                       <li>Read the City of Ottawa <a href="http://ottawa.ca/en/mobile-apps-and-open-data/open-data-terms-use">Open Data Terms of Use</a></li>
                   </ul>
               </div>
+              {% endif %}
           </div>
 
           <div class="row">
-              <h3 style="text-align: center;">{{_('Featured Datasets')}}</h3>
+              <h3 style="text-align: center;">
+                  {% if h.lang() == 'fr' %}
+                    Jeux de données présentés
+                  {% else %}
+                    {{_('Featured Datasets')}}
+                  {% endif %}
+              </h3>
               {% for feature_row in c.featured_views | batch(2) %}
               <div class="row-fluid">
                   {% for feature in feature_row %}
@@ -63,7 +87,13 @@
 
         <div class="col-md-3">
           <div class="mrgn-lft-md panel panel-default panel-body">
-            <h3 style="text-align:center;">{{_('Search by Group')}}</h3>
+            <h3 style="text-align:center;">
+                {% if h.lang() == 'fr' %}
+                    Recherche par groupe
+                {% else %}
+                    {{_('Search by Group')}}
+                {% endif %}
+            </h3>
             {% for group in h.groups()[0:8] %}
             {% snippet "group/snippets/group_item.html", group=group, position=loop.index, loop_items=2 %}
             {% endfor %}

@@ -1,10 +1,14 @@
 <div class="panel panel-info">
     <div class="panel-heading"><span class="glyphicon glyphicon-question-sign"></span> {{ _('What are Organizations?') }}</div>
     <div class="panel-body">
-        {% trans %}
+        {% if h.lang() == 'fr' %}
+        Les organisations sont comme des services d’édition pour les jeux de
+        données (par exemple, le Service de Santé) dans la Ville. Ceci vous
+        aide à trouver plus facilement les données que vous cherchez.
+        {% else %}
         Organizations act like publishing departments for datasets (for
         example, the Department of Health) within the City. This helps you
         more easily find the data you are looking for.<br><br>
-        {% endtrans %}
+        {% endif %}
     </div>
 </div>
