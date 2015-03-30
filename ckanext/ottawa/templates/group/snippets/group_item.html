@@ -18,7 +18,13 @@
             {% endblock %}
 
             {% block title %}
-                <a href="{{ url }}" class="media-heading">{{ group.display_name }}</a>
+                <a href="{{ url }}" class="media-heading">
+                    {% if h.lang() == 'fr' and group['title_fr'] %}
+                        {{ group['title_fr'] }}
+                    {% else %}
+                        {{ group.display_name }}
+                    {% endif %}
+                </a>
             {% endblock %}
             <br/>
             {% block datasets %}
