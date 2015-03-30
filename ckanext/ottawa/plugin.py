@@ -157,7 +157,11 @@ def _filter_resource_tags(package):
     return res_list
 
 def _dataset_display_name(package_or_package_dict):
-    title = package_or_package_dict['title']
+    if type(package_or_package_dict) is dict:
+        title = package_or_package_dict['title']
+    else:
+        title = package_or_package_dict.title
+
     if isinstance(title, dict):
         display = title[h.lang()]
     else:
