@@ -3,10 +3,12 @@ import ckan.lib.helpers as h
 import json
 import logging
 import ckanapi
+import ckan.model as model
 
 from ckan.plugins.interfaces import IDatasetForm
 from ckan.lib.plugins import DefaultDatasetForm, DefaultGroupForm, DefaultOrganizationForm
 from ckan.logic.schema import default_create_package_schema, group_form_schema
+from ckan.logic import get_action
 from ckan.lib.navl.validators import ignore_missing
 from ckan.new_authz import is_sysadmin
 from ckan.logic.validators import name_validator
@@ -88,6 +90,7 @@ class OttawaOrgPlugin(p.SingletonPlugin, DefaultOrganizationForm):
         return schema
 
     def setup_template_variables(self, context, data_dict):
+        5/0
         pass
 
 class OttawaThemePlugin(p.SingletonPlugin):
@@ -110,7 +113,8 @@ class OttawaThemePlugin(p.SingletonPlugin):
         return {
             'resource_tags': _filter_resource_tags,
             'groups': _home_groups,
-            'title': _title_from_solr
+            'title': _title_from_solr,
+            'french_group_name': _french_group_name
         }
 
 def _title_from_solr(title_str, lang):
@@ -167,3 +171,21 @@ def _dataset_display_name(package_or_package_dict):
     else:
         display = json.loads(title)[h.lang()]
     return display
+
+def db_to_form_schema(group_type='group'):
+    from ckan.lib.plugins import lookup_group_plugin
+    return lookup_group_plugin(group_type).db_to_form_schema()
+
+def _french_group_name(group_dict):
+    """
+    CKAN doesn't give us the full group dict on /groups, but we need it
+    """
+    context = {'model': model, 'session': model.Session,
+               'ignore_auth': True,
+               'schema': db_to_form_schema(),
+               'for_view': True}
+    data_dict = {'id': group_dict['id'], 'include_datasets': True}
+
+    group = get_action('group_show')({}, {'id': group_dict['name']})
+
+    return group.get('title_fr', group['display_name'])

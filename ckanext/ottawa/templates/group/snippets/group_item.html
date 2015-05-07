@@ -19,8 +19,8 @@
 
             {% block title %}
                 <a href="{{ url }}" class="media-heading">
-                    {% if h.lang() == 'fr' and group['title_fr'] %}
-                        {{ group['title_fr'] }}
+                    {% if h.lang() == 'fr' %}
+                        {{ h.french_group_name(group) }}
                     {% else %}
                         {{ group.display_name }}
                     {% endif %}
