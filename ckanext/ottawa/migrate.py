@@ -1,20 +1,23 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[3]:
 
 import ckanapi
 import markdown
 import time
+import requests
+
+from ckanapi.errors import ValidationError
 
 
-# In[2]:
+# In[4]:
 
 ckan = ckanapi.RemoteCKAN("http://data.ottawa.ca/")
-ckan_v2 = ckanapi.RemoteCKAN("http://boot2docker:5698/", apikey="baebeea6-b6b8-4a5d-95f9-986ab15dfdb4")
+ckan_v2 = ckanapi.RemoteCKAN("http://boot2docker:5698/", apikey="3ddd60eb-a8e2-45a7-9a29-cf26b1f29f66")
 
 
-# In[3]:
+# In[5]:
 
 #move groups to organizations
 groups = ckan.action.group_list()
@@ -32,7 +35,7 @@ for name in groups:
     print "Created Organization {0}".format(group_v2['name'])
 
 
-# In[4]:
+# In[6]:
 
 #create new groups
 new_groups = {'city-hall': 'City Hall', 
@@ -50,7 +53,7 @@ for g in new_groups:
     ckan_v2.action.group_create(**group_dict)
 
 
-# In[5]:
+# In[7]:
 
 def import_packages(package_list):
     for name in package_list:
@@ -106,7 +109,7 @@ def import_packages(package_list):
         print "Created Package {0}".format(package_v2['name'])
 
 
-# In[6]:
+# In[8]:
 
 packages = ckan.action.package_list()
 for package in packages:
@@ -115,7 +118,7 @@ for package in packages:
     #import time; time.sleep(5)
 
 
-# In[ ]:
+# In[9]:
 
 #files datastore has problems with:
 #http://data.ottawa.ca/storage/f/2014-09-29T190031/City-of-Ottawa-Drinking-Water-Data-Summary.zip
@@ -124,7 +127,7 @@ for package in packages:
 #http://join.ottawa.ca/open_data/feeds/scheds - interesting one
 
 
-# In[67]:
+# In[10]:
 
 for p in ckan_v2.action.package_list():
     package = ckan_v2.action.package_show(id=p)
@@ -132,7 +135,7 @@ for p in ckan_v2.action.package_list():
     ckan_v2.action.package_update(**package)
 
 
-# In[ ]:
+# In[11]:
 
 #migrate files
 packages = ckan_v2.action.package_list()
@@ -143,8 +146,11 @@ for p in packages:
             f = requests.get(resource['url'], stream=True)
             name = resource['url'].split('/')[-1]
             resource['upload'] = (name, f.raw)
-            ckan_v2.action.resource_update(**resource)
-            f.close()
+            try:
+                ckan_v2.action.resource_update(**resource)
+                f.close()
+            except ValidationError as e:
+                print "skipping resource {0}, {1}".format(resource['name'].encode('utf-8'), str(e))
         else:
             print "skipping resource {0}, type is: {1}".format(resource['name'].encode('utf-8'), resource['resource_type'])
 
