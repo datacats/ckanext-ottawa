@@ -1,18 +1,20 @@
 
-# In[61]:
+# coding: utf-8
+
+# In[1]:
 
 import ckanapi
 import markdown
 import time
 
 
-# In[62]:
+# In[2]:
 
 ckan = ckanapi.RemoteCKAN("http://data.ottawa.ca/")
-ckan_v2 = ckanapi.RemoteCKAN("http://ottawadev.dcats.ca/", apikey="e427b14d-8cd3-4e9d-8cbe-3e03468cfea3")
+ckan_v2 = ckanapi.RemoteCKAN("http://boot2docker:5698/", apikey="baebeea6-b6b8-4a5d-95f9-986ab15dfdb4")
 
 
-# In[63]:
+# In[3]:
 
 #move groups to organizations
 groups = ckan.action.group_list()
@@ -30,7 +32,7 @@ for name in groups:
     print "Created Organization {0}".format(group_v2['name'])
 
 
-# In[64]:
+# In[4]:
 
 #create new groups
 new_groups = {'city-hall': 'City Hall', 
@@ -48,7 +50,7 @@ for g in new_groups:
     ckan_v2.action.group_create(**group_dict)
 
 
-# In[65]:
+# In[5]:
 
 def import_packages(package_list):
     for name in package_list:
@@ -104,13 +106,13 @@ def import_packages(package_list):
         print "Created Package {0}".format(package_v2['name'])
 
 
-# In[66]:
+# In[6]:
 
 packages = ckan.action.package_list()
-for package in packages[1:]:
+for package in packages:
     import_packages([package])
     #uncomment next line if you want to stagger imports for fear of overloading datapusher
-    import time; time.sleep(5)
+    #import time; time.sleep(5)
 
 
 # In[ ]:
@@ -132,5 +134,17 @@ for p in ckan_v2.action.package_list():
 
 # In[ ]:
 
-
+#migrate files
+packages = ckan_v2.action.package_list()
+for p in packages:
+    package = ckan_v2.action.package_show(id=p)
+    for resource in package['resources']:
+        if resource['resource_type'] in ['file.upload', 'file', None]:
+            f = requests.get(resource['url'], stream=True)
+            name = resource['url'].split('/')[-1]
+            resource['upload'] = (name, f.raw)
+            ckan_v2.action.resource_update(**resource)
+            f.close()
+        else:
+            print "skipping resource {0}, type is: {1}".format(resource['name'].encode('utf-8'), resource['resource_type'])
 
