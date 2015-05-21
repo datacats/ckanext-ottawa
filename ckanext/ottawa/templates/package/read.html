@@ -2,7 +2,7 @@
 
 {% block actions_content %}
   <div class="col-md-12">
-    <div class="btn-group">
+    <div class="btn-group" style="margin-bottom:0.6rem;">
        {% if h.check_access('package_update', {'id':pkg.id }) %}
           {% link_for _('Edit'), controller='package', action='edit', id=pkg.name, class_='btn btn-default' %}
           {{ h.follow_button('dataset', pkg.id) }}
@@ -10,6 +10,18 @@
         {% endif %}
     </div>
   </div>
+{% endblock %}
+
+{% block package_item_notes %}
+    {% set view = h.get_canonical_resource_view(pkg.id) %}
+
+    {% snippet 'package/snippets/resource_view.html',
+        resource_view = view['resource_view'],
+        resource = view['resource'],
+        package = pkg
+    %}
+
+    {{ super() }}
 {% endblock %}
 
 {% block package_item_title %}
