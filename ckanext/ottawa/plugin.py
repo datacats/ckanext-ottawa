@@ -90,7 +90,6 @@ class OttawaOrgPlugin(p.SingletonPlugin, DefaultOrganizationForm):
         return schema
 
     def setup_template_variables(self, context, data_dict):
-        5/0
         pass
 
 class OttawaThemePlugin(p.SingletonPlugin):
