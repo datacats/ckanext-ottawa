@@ -20,10 +20,6 @@ log = logging.getLogger(__name__)
 
 class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
     p.implements(p.IGroupForm, inherit=True)
-    p.implements(p.IConfigurer, inherit=True)
-
-    def update_config(self, config):
-        p.toolkit.add_template_directory(config, 'templates')
 
     def is_fallback(self):
         return True
@@ -57,10 +53,6 @@ class OttawaGroupPlugin(p.SingletonPlugin, DefaultGroupForm):
 
 class OttawaOrgPlugin(p.SingletonPlugin, DefaultOrganizationForm):
     p.implements(p.IGroupForm, inherit=True)
-    p.implements(p.IConfigurer, inherit=True)
-
-    def update_config(self, config):
-        p.toolkit.add_template_directory(config, 'templates')
 
     def is_fallback(self):
         return False
