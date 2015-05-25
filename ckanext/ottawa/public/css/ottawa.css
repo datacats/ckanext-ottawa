@@ -673,6 +673,7 @@ figure.thumbnail {
 }
 
 .ottawa-previews {
+    max-height: 596px;
 }
 
 .ottawa-previews h4 {
