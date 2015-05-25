@@ -672,6 +672,10 @@ figure.thumbnail {
     margin-bottom:0;
 }
 
+.ottawa-previews {
+    max-height: 500px;
+}
+
 .ottawa-previews h4 {
     margin-top:0;
     margin-bottom: 0;
