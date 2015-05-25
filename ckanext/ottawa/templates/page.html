@@ -22,7 +22,11 @@
 {% block wet_search_box %}
 <div id="wb-sttl" class="col-md-7">
     {% block site_title %}
-    <a href="/"> <img src="/img/open_data_logo_en.png" width="160" height="45" style="margin: 20px 0 20px 0;" alt="City of Ottawa"> </a>
+        {% if h.lang() == 'fr' %}
+            <a href="/fr/"> <img src="/img/open_data_logo_fr.png" width="240" height="45" style="margin: 20px 0 20px 0;" alt="City of Ottawa"> </a>
+        {% else %}
+            <a href="/"> <img src="/img/open_data_logo_en.png" width="160" height="45" style="margin: 20px 0 20px 0;" alt="City of Ottawa"> </a>
+        {% endif %}
     {% endblock %}
 </div>
 
