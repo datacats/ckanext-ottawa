@@ -27,13 +27,13 @@
                 </a>
             {% endblock %}
             <br/>
-            {% block datasets %}
+            <!--{% block datasets %}
                 {% if group.packages %}
                 <strong class="count">{{ ungettext('{num} Dataset', '{num} Datasets', group.packages).format(num=group.packages) }}</strong>
                 {% elif group.packages == 0 %}
                 <span class="count">{{ _('0 Datasets') }}</span>
                 {% endif %}
-            {% endblock %}
+            {% endblock %}-->
         {% endblock %}
     </figure>
 </div>
