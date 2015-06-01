@@ -93,7 +93,7 @@
                     {{_('Search by Group')}}
                 {% endif %}
             </h3>
-            {% for group in h.groups()[0:8] %}
+            {% for group in h.groups() %}
             {% snippet "group/snippets/group_item.html", group=group, position=loop.index, loop_items=2 %}
             {% endfor %}
           </div>
