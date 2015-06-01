@@ -12,4 +12,6 @@ Disallow: /*/user/
 Disallow: /*/tag/
 Disallow: /*/dataset?*
 Disallow: /*/organization?*
-Disallow: /*/organization?*
+Disallow: /*/group?*
+Disallow: /*/organization/*?*
+Disallow: /*/group/*?*
