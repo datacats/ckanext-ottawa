@@ -10,3 +10,6 @@ Disallow: /*/revision/
 Disallow: /*/storage/
 Disallow: /*/user/
 Disallow: /*/tag/
+Disallow: /*/dataset?*
+Disallow: /*/organization?*
+Disallow: /*/organization?*
