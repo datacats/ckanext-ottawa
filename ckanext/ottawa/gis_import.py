@@ -1,7 +1,7 @@
 """Import GIS dataset resources into CKAN
 
 Usage:
-    geoimport (-b GIS_REPO) (-m MAPPING) (-r CKAN_URL) (-a APIKEY)
+    geoimport (-g GIS_REPO) (-m MAPPING) (-r CKAN_URL) (-a APIKEY)
 
 Options:
     -g --gis        Location of the GIS resource repo to import from
