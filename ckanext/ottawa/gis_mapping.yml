@@ -1,0 +1,445 @@
+airport-runways:
+  csv: Tables/SAM_CITYWIDE_runways.csv
+  dwg: DWG/SAM_CITYWIDE_runways.dwg
+  kml: KMZ/SAM_CITYWIDE_runways.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_runways.dbf
+    prj: Shapefiles/SAM_CITYWIDE_runways.prj
+    sbn: Shapefiles/SAM_CITYWIDE_runways.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_runways.sbx
+    shp: Shapefiles/SAM_CITYWIDE_runways.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_runways.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_runways.shx
+  xml: XML/SAM_CITYWIDE_runways.xml
+ball-diamonds-2009:
+  csv: Tables/PR_Ball_Diamonds.csv
+  dwg: DWG/PR_Ball_Diamonds.dwg
+  kml: KMZ/PR_Ball_Diamonds.kmz
+  shp:
+    dbf: Shapefiles/PR_Ball_Diamonds.dbf
+    prj: Shapefiles/PR_Ball_Diamonds.prj
+    sbn: Shapefiles/PR_Ball_Diamonds.sbn
+    sbx: Shapefiles/PR_Ball_Diamonds.sbx
+    shp: Shapefiles/PR_Ball_Diamonds.shp
+    shp.xml: Shapefiles/PR_Ball_Diamonds.shp.xml
+    shx: Shapefiles/PR_Ball_Diamonds.shx
+  xml: XML/PR_Ball_Diamonds.xml
+basket-ball-courts-2009:
+  csv: Tables/PR_Basketball_Courts.csv
+  dwg: DWG/PR_Basketball_Courts.dwg
+  kml: KMZ/PR_Basketball_Courts.kmz
+  shp:
+    dbf: Shapefiles/PR_Basketball_Courts.dbf
+    prj: Shapefiles/PR_Basketball_Courts.prj
+    sbn: Shapefiles/PR_Basketball_Courts.sbn
+    sbx: Shapefiles/PR_Basketball_Courts.sbx
+    shp: Shapefiles/PR_Basketball_Courts.shp
+    shp.xml: Shapefiles/PR_Basketball_Courts.shp.xml
+    shx: Shapefiles/PR_Basketball_Courts.shx
+  xml: XML/PR_Basketball_Courts.xml
+cycling-network:
+  csv: Tables/PL_CyclingNetwork.csv
+  dwg: DWG/PL_CyclingNetwork.dwg
+  kml: KMZ/PL_CyclingNetwork.kmz
+  shp:
+    dbf: Shapefiles/PL_CyclingNetwork.dbf
+    prj: Shapefiles/PL_CyclingNetwork.prj
+    sbn: Shapefiles/PL_CyclingNetwork.sbn
+    sbx: Shapefiles/PL_CyclingNetwork.sbx
+    shp: Shapefiles/PL_CyclingNetwork.shp
+    shp.xml: Shapefiles/PL_CyclingNetwork.shp.xml
+    shx: Shapefiles/PL_CyclingNetwork.shx
+  xml: XML/PL_CyclingNetwork.xml
+ditches:
+  csv: Tables/SAM_CITYWIDE_ditches.csv
+  dwg: DWG/SAM_CITYWIDE_ditches.dwg
+  kml: KMZ/SAM_CITYWIDE_ditches.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_ditches.dbf
+    prj: Shapefiles/SAM_CITYWIDE_ditches.prj
+    sbn: Shapefiles/SAM_CITYWIDE_ditches.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_ditches.sbx
+    shp: Shapefiles/SAM_CITYWIDE_ditches.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_ditches.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_ditches.shx
+  xml: XML/SAM_CITYWIDE_ditches.xml
+drainage:
+  csv: Tables/SAM_CITYWIDE_drainage.csv
+  dwg: DWG/SAM_CITYWIDE_drainage.dwg
+  kml: KMZ/SAM_CITYWIDE_drainage.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_drainage.dbf
+    prj: Shapefiles/SAM_CITYWIDE_drainage.prj
+    sbn: Shapefiles/SAM_CITYWIDE_drainage.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_drainage.sbx
+    shp: Shapefiles/SAM_CITYWIDE_drainage.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_drainage.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_drainage.shx
+  xml: XML/SAM_CITYWIDE_drainage.xml
+fences:
+  csv: Tables/SAM_CITYWIDE_fences.csv
+  dwg: DWG/SAM_CITYWIDE_fences.dwg
+  kml: KMZ/SAM_CITYWIDE_fences.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_fences.dbf
+    prj: Shapefiles/SAM_CITYWIDE_fences.prj
+    sbn: Shapefiles/SAM_CITYWIDE_fences.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_fences.sbx
+    shp: Shapefiles/SAM_CITYWIDE_fences.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_fences.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_fences.shx
+  xml: XML/SAM_CITYWIDE_fences.xml
+former-townships:
+  csv: Tables/SAM_townships_Former.csv
+  dwg: DWG/SAM_townships_Former.dwg
+  kml: KMZ/SAM_townships_Former.kmz
+  shp:
+    dbf: Shapefiles/SAM_townships_Former.dbf
+    prj: Shapefiles/SAM_townships_Former.prj
+    sbn: Shapefiles/SAM_townships_Former.sbn
+    sbx: Shapefiles/SAM_townships_Former.sbx
+    shp: Shapefiles/SAM_townships_Former.shp
+    shp.xml: Shapefiles/SAM_townships_Former.shp.xml
+    shx: Shapefiles/SAM_townships_Former.shx
+  xml: XML/SAM_townships_Former.xml
+hydrolines:
+  csv: Tables/SAM_CITYWIDE_hydrolines.csv
+  dwg: DWG/SAM_CITYWIDE_hydrolines.dwg
+  kml: KMZ/SAM_CITYWIDE_hydrolines.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_hydrolines.dbf
+    prj: Shapefiles/SAM_CITYWIDE_hydrolines.prj
+    sbn: Shapefiles/SAM_CITYWIDE_hydrolines.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_hydrolines.sbx
+    shp: Shapefiles/SAM_CITYWIDE_hydrolines.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_hydrolines.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_hydrolines.shx
+  xml: XML/SAM_CITYWIDE_hydrolines.xml
+large-buildings:
+  csv: Tables/SAM_CITYWIDE_buildingsLarge.csv
+  dwg: DWG/SAM_CITYWIDE_buildingsLarge.dwg
+  kml: KMZ/SAM_CITYWIDE_buildingsLarge.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_buildingsLarge.dbf
+    prj: Shapefiles/SAM_CITYWIDE_buildingsLarge.prj
+    sbn: Shapefiles/SAM_CITYWIDE_buildingsLarge.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_buildingsLarge.sbx
+    shp: Shapefiles/SAM_CITYWIDE_buildingsLarge.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_buildingsLarge.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_buildingsLarge.shx
+  xml: XML/SAM_CITYWIDE_buildingsLarge.xml
+lawn-bowling:
+  csv: Tables/PR_Lawn_Bowling.csv
+  dwg: DWG/PR_Lawn_Bowling.dwg
+  kml: KMZ/PR_Lawn_Bowling.kmz
+  shp:
+    dbf: Shapefiles/PR_Lawn_Bowling.dbf
+    prj: Shapefiles/PR_Lawn_Bowling.prj
+    sbn: Shapefiles/PR_Lawn_Bowling.sbn
+    sbx: Shapefiles/PR_Lawn_Bowling.sbx
+    shp: Shapefiles/PR_Lawn_Bowling.shp
+    shp.xml: Shapefiles/PR_Lawn_Bowling.shp.xml
+    shx: Shapefiles/PR_Lawn_Bowling.shx
+  xml: XML/PR_Lawn_Bowling.xml
+neighbourhood-names:
+  csv: Tables/SAM_neighbourhoodNames.csv
+  dwg: DWG/SAM_neighbourhoodNames.dwg
+  kml: KMZ/SAM_neighbourhoodNames.kmz
+  shp:
+    dbf: Shapefiles/SAM_neighbourhoodNames.dbf
+    prj: Shapefiles/SAM_neighbourhoodNames.prj
+    sbn: Shapefiles/SAM_neighbourhoodNames.sbn
+    sbx: Shapefiles/SAM_neighbourhoodNames.sbx
+    shp: Shapefiles/SAM_neighbourhoodNames.shp
+    shp.xml: Shapefiles/SAM_neighbourhoodNames.shp.xml
+    shx: Shapefiles/SAM_neighbourhoodNames.shx
+  xml: XML/SAM_neighbourhoodNames.xml
+o-train-stations:
+  csv: Tables/SAM_oTrainStations.csv
+  dwg: DWG/SAM_oTrainStations.dwg
+  kml: KMZ/SAM_oTrainStations.kmz
+  shp:
+    dbf: Shapefiles/SAM_oTrainStations.dbf
+    prj: Shapefiles/SAM_oTrainStations.prj
+    sbn: Shapefiles/SAM_oTrainStations.sbn
+    sbx: Shapefiles/SAM_oTrainStations.sbx
+    shp: Shapefiles/SAM_oTrainStations.shp
+    shp.xml: Shapefiles/SAM_oTrainStations.shp.xml
+    shx: Shapefiles/SAM_oTrainStations.shx
+  xml: XML/SAM_oTrainStations.xml
+o-train-tracks:
+  csv: Tables/SAM_oTrainCentreline.csv
+  dwg: DWG/SAM_oTrainCentreline.dwg
+  kml: KMZ/SAM_oTrainCentreline.kmz
+  shp:
+    dbf: Shapefiles/SAM_oTrainCentreline.dbf
+    prj: Shapefiles/SAM_oTrainCentreline.prj
+    sbn: Shapefiles/SAM_oTrainCentreline.sbn
+    sbx: Shapefiles/SAM_oTrainCentreline.sbx
+    shp: Shapefiles/SAM_oTrainCentreline.shp
+    shp.xml: Shapefiles/SAM_oTrainCentreline.shp.xml
+    shx: Shapefiles/SAM_oTrainCentreline.shx
+  xml: XML/SAM_oTrainCentreline.xml
+outdoor-rinks:
+  dwg: DWG/PR_Outdoor_Rinks_ext.dwg
+  kml: KMZ/PR_Outdoor_Rinks_ext.kmz
+  shp:
+    dbf: Shapefiles/PR_Outdoor_Rinks_ext.dbf
+    prj: Shapefiles/PR_Outdoor_Rinks_ext.prj
+    sbn: Shapefiles/PR_Outdoor_Rinks_ext.sbn
+    sbx: Shapefiles/PR_Outdoor_Rinks_ext.sbx
+    shp: Shapefiles/PR_Outdoor_Rinks_ext.shp
+    shp.xml: Shapefiles/PR_Outdoor_Rinks_ext.shp.xml
+    shx: Shapefiles/PR_Outdoor_Rinks_ext.shx
+  xml: XML/PR_Outdoor_Rinks_ext.xml
+parks:
+  csv: Tables/PR_Parks_ext.csv
+  dwg: DWG/PR_Parks_ext.dwg
+  kml: KMZ/PR_Parks_ext.kmz
+  shp:
+    dbf: Shapefiles/PR_Parks_ext.dbf
+    prj: Shapefiles/PR_Parks_ext.prj
+    sbn: Shapefiles/PR_Parks_ext.sbn
+    sbx: Shapefiles/PR_Parks_ext.sbx
+    shp: Shapefiles/PR_Parks_ext.shp
+    shp.xml: Shapefiles/PR_Parks_ext.shp.xml
+    shx: Shapefiles/PR_Parks_ext.shx
+  xml: XML/PR_Parks_ext.xml
+parks-pathway-links:
+  csv: Tables/PR_Pathway_Links.csv
+  dwg: DWG/PR_Pathway_Links.dwg
+  kml: KMZ/PR_Pathway_Links.kmz
+  shp:
+    dbf: Shapefiles/PR_Pathway_Links.dbf
+    prj: Shapefiles/PR_Pathway_Links.prj
+    sbn: Shapefiles/PR_Pathway_Links.sbn
+    sbx: Shapefiles/PR_Pathway_Links.sbx
+    shp: Shapefiles/PR_Pathway_Links.shp
+    shp.xml: Shapefiles/PR_Pathway_Links.shp.xml
+    shx: Shapefiles/PR_Pathway_Links.shx
+  xml: XML/PR_Pathway_Links.xml
+rapids:
+  csv: Tables/SAM_CITYWIDE_rapids.csv
+  dwg: DWG/SAM_CITYWIDE_rapids.dwg
+  kml: KMZ/SAM_CITYWIDE_rapids.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_rapids.dbf
+    prj: Shapefiles/SAM_CITYWIDE_rapids.prj
+    sbn: Shapefiles/SAM_CITYWIDE_rapids.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_rapids.sbx
+    shp: Shapefiles/SAM_CITYWIDE_rapids.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_rapids.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_rapids.shx
+  xml: XML/SAM_CITYWIDE_rapids.xml
+rideau-trail:
+  csv: Tables/SAM_rideauTrail.csv
+  dwg: DWG/SAM_rideauTrail.dwg
+  kml: KMZ/SAM_rideauTrail.kmz
+  shp:
+    dbf: Shapefiles/SAM_rideauTrail.dbf
+    prj: Shapefiles/SAM_rideauTrail.prj
+    sbn: Shapefiles/SAM_rideauTrail.sbn
+    sbx: Shapefiles/SAM_rideauTrail.sbx
+    shp: Shapefiles/SAM_rideauTrail.shp
+    shp.xml: Shapefiles/SAM_rideauTrail.shp.xml
+    shx: Shapefiles/SAM_rideauTrail.shx
+  xml: XML/SAM_rideauTrail.xml
+rivers-2:
+  csv: Tables/SAM_CITYWIDE_rivers.csv
+  dwg: DWG/SAM_CITYWIDE_rivers.dwg
+  kml: KMZ/SAM_CITYWIDE_rivers.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_rivers.dbf
+    prj: Shapefiles/SAM_CITYWIDE_rivers.prj
+    sbn: Shapefiles/SAM_CITYWIDE_rivers.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_rivers.sbx
+    shp: Shapefiles/SAM_CITYWIDE_rivers.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_rivers.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_rivers.shx
+  xml: XML/SAM_CITYWIDE_rivers.xml
+skateboard-parks:
+  csv: Tables/PR_Skateboard_Parks.csv
+  dwg: DWG/PR_Skateboard_Parks.dwg
+  kml: KMZ/PR_Skateboard_Parks.kmz
+  shp:
+    dbf: Shapefiles/PR_Skateboard_Parks.dbf
+    prj: Shapefiles/PR_Skateboard_Parks.prj
+    sbn: Shapefiles/PR_Skateboard_Parks.sbn
+    sbx: Shapefiles/PR_Skateboard_Parks.sbx
+    shp: Shapefiles/PR_Skateboard_Parks.shp
+    shp.xml: Shapefiles/PR_Skateboard_Parks.shp.xml
+    shx: Shapefiles/PR_Skateboard_Parks.shx
+  xml: XML/PR_Skateboard_Parks.xml
+sledding-hills:
+  dwg: DWG/PR_Sledding_Hills.dwg
+  kml: KMZ/PR_Sledding_Hills.kmz
+  xml: XML/PR_Sledding_Hills.xml
+splash-pads:
+  csv: Tables/PR_Splash_Pads_ext.csv
+  dwg: DWG/PR_Splash_Pads_ext.dwg
+  kml: KMZ/PR_Splash_Pads_ext.kmz
+  shp:
+    dbf: Shapefiles/PR_Splash_Pads_ext.dbf
+    prj: Shapefiles/PR_Splash_Pads_ext.prj
+    sbn: Shapefiles/PR_Splash_Pads_ext.sbn
+    sbx: Shapefiles/PR_Splash_Pads_ext.sbx
+    shp: Shapefiles/PR_Splash_Pads_ext.shp
+    shp.xml: Shapefiles/PR_Splash_Pads_ext.shp.xml
+    shx: Shapefiles/PR_Splash_Pads_ext.shx
+  xml: XML/PR_Splash_Pads_ext.xml
+sports-fields:
+  csv: Tables/PR_Sports_Fields.csv
+  dwg: DWG/PR_Sports_Fields.dwg
+  kml: KMZ/PR_Sports_Fields.kmz
+  shp:
+    dbf: Shapefiles/PR_Sports_Fields.dbf
+    prj: Shapefiles/PR_Sports_Fields.prj
+    sbn: Shapefiles/PR_Sports_Fields.sbn
+    sbx: Shapefiles/PR_Sports_Fields.sbx
+    shp: Shapefiles/PR_Sports_Fields.shp
+    shp.xml: Shapefiles/PR_Sports_Fields.shp.xml
+    shx: Shapefiles/PR_Sports_Fields.shx
+  xml: XML/PR_Sports_Fields.xml
+swamps:
+  csv: Tables/SAM_CITYWIDE_swamps.csv
+  dwg: DWG/SAM_CITYWIDE_swamps.dwg
+  kml: KMZ/SAM_CITYWIDE_swamps.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_swamps.dbf
+    prj: Shapefiles/SAM_CITYWIDE_swamps.prj
+    sbn: Shapefiles/SAM_CITYWIDE_swamps.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_swamps.sbx
+    shp: Shapefiles/SAM_CITYWIDE_swamps.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_swamps.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_swamps.shx
+  xml: XML/SAM_CITYWIDE_swamps.xml
+tennis-courts:
+  csv: Tables/PR_Tennis_Courts.csv
+  dwg: DWG/PR_Tennis_Courts.dwg
+  kml: KMZ/PR_Tennis_Courts.kmz
+  shp:
+    dbf: Shapefiles/PR_Tennis_Courts.dbf
+    prj: Shapefiles/PR_Tennis_Courts.prj
+    sbn: Shapefiles/PR_Tennis_Courts.sbn
+    sbx: Shapefiles/PR_Tennis_Courts.sbx
+    shp: Shapefiles/PR_Ball_Diamonds.shp
+    shp.xml: Shapefiles/PR_Tennis_Courts.shp.xml
+    shx: Shapefiles/PR_Tennis_Courts.shx
+  xml: XML/PR_Tennis_Courts.xml
+township-lot-centroids:
+  csv: Tables/SAM_townshipLotsCentroids.csv
+  dwg: DWG/SAM_townshipLotsCentroids.dwg
+  kml: KMZ/SAM_townshipLotsCentroids.kmz
+  shp:
+    dbf: Shapefiles/SAM_townshipLotsCentroids.dbf
+    prj: Shapefiles/SAM_townshipLotsCentroids.prj
+    sbn: Shapefiles/SAM_townshipLotsCentroids.sbn
+    sbx: Shapefiles/SAM_townshipLotsCentroids.sbx
+    shp: Shapefiles/SAM_townshipLotsCentroids.shp
+    shp.xml: Shapefiles/SAM_townshipLotsCentroids.shp.xml
+    shx: Shapefiles/SAM_townshipLotsCentroids.shx
+  xml: XML/SAM_townshipLotsCentroids.xml
+trails:
+  csv: Tables/SAM_CITYWIDE_trails.csv
+  dwg: DWG/SAM_CITYWIDE_trails.dwg
+  kml: KMZ/SAM_CITYWIDE_trails.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_trails.dbf
+    prj: Shapefiles/SAM_CITYWIDE_trails.prj
+    sbn: Shapefiles/SAM_CITYWIDE_trails.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_trails.sbx
+    shp: Shapefiles/SAM_CITYWIDE_trails.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_trails.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_trails.shx
+  xml: XML/SAM_CITYWIDE_trails.xml
+trans-canada-trail:
+  csv: Tables/SAM_transCanadaTrail.csv
+  dwg: DWG/SAM_transCanadaTrail.dwg
+  kml: KMZ/SAM_transCanadaTrail.kmz
+  shp:
+    dbf: Shapefiles/SAM_transCanadaTrail.dbf
+    prj: Shapefiles/SAM_transCanadaTrail.prj
+    sbn: Shapefiles/SAM_transCanadaTrail.sbn
+    sbx: Shapefiles/SAM_transCanadaTrail.sbx
+    shp: Shapefiles/SAM_transCanadaTrail.shp
+    shp.xml: Shapefiles/SAM_transCanadaTrail.shp.xml
+    shx: Shapefiles/SAM_transCanadaTrail.shx
+  xml: XML/SAM_transCanadaTrail.xml
+volleyball-courts:
+  csv: Tables/PR_Volleyball_Courts.csv
+  dwg: DWG/PR_Volleyball_Courts.dwg
+  kml: KMZ/PR_Volleyball_Courts.kmz
+  shp:
+    dbf: Shapefiles/PR_Volleyball_Courts.dbf
+    prj: Shapefiles/PR_Volleyball_Courts.prj
+    sbn: Shapefiles/PR_Volleyball_Courts.sbn
+    sbx: Shapefiles/PR_Volleyball_Courts.sbx
+    shp: Shapefiles/PR_Volleyball_Courts.shp
+    shp.xml: Shapefiles/PR_Volleyball_Courts.shp.xml
+    shx: Shapefiles/PR_Volleyball_Courts.shx
+  xml: XML/PR_Volleyball_Courts.xml
+wading-pools:
+  csv: Tables/PR_Outdoor_Pools_Wading_ext.csv
+  dwg: DWG/PR_Outdoor_Pools_Wading_ext.dwg
+  kml: KMZ/PR_Outdoor_Pools_Wading_ext.kmz
+  shp:
+    dbf: Shapefiles/PR_Outdoor_Pools_Wading_ext.dbf
+    prj: Shapefiles/PR_Outdoor_Pools_Wading_ext.prj
+    sbn: Shapefiles/PR_Outdoor_Pools_Wading_ext.sbn
+    sbx: Shapefiles/PR_Outdoor_Pools_Wading_ext.sbx
+    shp: Shapefiles/PR_Outdoor_Pools_Wading_ext.shp
+    shp.xml: Shapefiles/PR_Outdoor_Pools_Wading_ext.shp.xml
+    shx: Shapefiles/PR_Outdoor_Pools_Wading_ext.shx
+  xml: XML/PR_Outdoor_Pools_Wading_ext.xml
+wards-2003:
+  csv: Tables/SAM_wards2003.csv
+  dwg: DWG/SAM_wards2003.dwg
+  kml: KMZ/SAM_wards2003.kmz
+  shp:
+    dbf: Shapefiles/SAM_wards2003.dbf
+    prj: Shapefiles/SAM_wards2003.prj
+    sbn: Shapefiles/SAM_wards2003.sbn
+    sbx: Shapefiles/SAM_wards2003.sbx
+    shp: Shapefiles/SAM_wards2003.shp
+    shp.xml: Shapefiles/SAM_wards2003.shp.xml
+    shx: Shapefiles/SAM_wards2003.shx
+  xml: XML/SAM_wards2003.xml
+wards-2006:
+  csv: Tables/SAM_wards2006.csv
+  dwg: DWG/SAM_wards2006.dwg
+  kml: KMZ/SAM_wards2006.kmz
+  shp:
+    dbf: Shapefiles/SAM_wards2006.dbf
+    prj: Shapefiles/SAM_wards2006.prj
+    sbn: Shapefiles/SAM_wards2006.sbn
+    sbx: Shapefiles/SAM_wards2006.sbx
+    shp: Shapefiles/SAM_wards2006.shp
+    shp.xml: Shapefiles/SAM_wards2006.shp.xml
+    shx: Shapefiles/SAM_wards2006.shx
+  xml: XML/SAM_wards2006.xml
+wards-2010-2:
+  csv: Tables/SAM_wards2010.csv
+  dwg: DWG/SAM_wards2010.dwg
+  kml: KMZ/SAM_wards2010.kmz
+  shp:
+    dbf: Shapefiles/SAM_wards2010.dbf
+    prj: Shapefiles/SAM_wards2010.prj
+    sbn: Shapefiles/SAM_wards2010.sbn
+    sbx: Shapefiles/SAM_wards2010.sbx
+    shp: Shapefiles/SAM_wards2010.shp
+    shp.xml: Shapefiles/SAM_wards2010.shp.xml
+    shx: Shapefiles/SAM_wards2010.shx
+  xml: XML/SAM_wards2010.xml
+water-bodies:
+  csv: Tables/SAM_CITYWIDE_water.csv
+  dwg: DWG/SAM_CITYWIDE_water.dwg
+  kml: KMZ/SAM_CITYWIDE_water.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_water.dbf
+    prj: Shapefiles/SAM_CITYWIDE_water.prj
+    sbn: Shapefiles/SAM_CITYWIDE_water.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_water.sbx
+    shp: Shapefiles/SAM_CITYWIDE_water.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_water.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_water.shx
+  xml: XML/SAM_CITYWIDE_water.xml
