@@ -11,7 +11,7 @@ airport-runways:
     shp.xml: Shapefiles/SAM_CITYWIDE_runways.shp.xml
     shx: Shapefiles/SAM_CITYWIDE_runways.shx
   xml: XML/SAM_CITYWIDE_runways.xml
-ball-diamonds-2009:
+ball-diamonds:
   csv: Tables/PR_Ball_Diamonds.csv
   dwg: DWG/PR_Ball_Diamonds.dwg
   kmz: KMZ/PR_Ball_Diamonds.kmz
@@ -24,7 +24,7 @@ ball-diamonds-2009:
     shp.xml: Shapefiles/PR_Ball_Diamonds.shp.xml
     shx: Shapefiles/PR_Ball_Diamonds.shx
   xml: XML/PR_Ball_Diamonds.xml
-basket-ball-courts-2009:
+basketball-courts:
   csv: Tables/PR_Basketball_Courts.csv
   dwg: DWG/PR_Basketball_Courts.dwg
   kmz: KMZ/PR_Basketball_Courts.kmz
@@ -244,7 +244,7 @@ rideau-trail:
     shp.xml: Shapefiles/SAM_rideauTrail.shp.xml
     shx: Shapefiles/SAM_rideauTrail.shx
   xml: XML/SAM_rideauTrail.xml
-rivers-2:
+rivers:
   csv: Tables/SAM_CITYWIDE_rivers.csv
   dwg: DWG/SAM_CITYWIDE_rivers.dwg
   kmz: KMZ/SAM_CITYWIDE_rivers.kmz
@@ -417,7 +417,7 @@ wards-2006:
     shp.xml: Shapefiles/SAM_wards2006.shp.xml
     shx: Shapefiles/SAM_wards2006.shx
   xml: XML/SAM_wards2006.xml
-wards-2010-2:
+wards-2010:
   csv: Tables/SAM_wards2010.csv
   dwg: DWG/SAM_wards2010.dwg
   kmz: KMZ/SAM_wards2010.kmz
@@ -430,7 +430,7 @@ wards-2010-2:
     shp.xml: Shapefiles/SAM_wards2010.shp.xml
     shx: Shapefiles/SAM_wards2010.shx
   xml: XML/SAM_wards2010.xml
-water-bodies:
+water:
   csv: Tables/SAM_CITYWIDE_water.csv
   dwg: DWG/SAM_CITYWIDE_water.dwg
   kmz: KMZ/SAM_CITYWIDE_water.kmz
