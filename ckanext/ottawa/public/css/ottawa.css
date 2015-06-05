@@ -700,3 +700,8 @@ h1, h2, h3, h4, h5 {
 .table {
     margin-top: 10px;
 }
+
+/** WCAG **/
+.h3{
+    color: #008375;
+}

@@ -1,7 +1,7 @@
 {% extends "page.html" %}
 
 {% block content %}
-  <div class="container">
+  <div class="container" id="wb-cont">
     <div class="row" style="margin-right:0;">
       <div class=" main-content col-md-9">
           <main role="main" property="mainContentOfPage">
@@ -21,7 +21,7 @@
           <div class="row">
               {% if h.lang() == 'fr' %}
               <div class="col-md-12">
-                  <h3>Bienvenue dans le catalogue Données ouvertes de la Ville d’Ottawa</h3>
+                  <h2 class="h3">Bienvenue dans le catalogue Données ouvertes de la Ville d’Ottawa</h2>
 
                   <p>
                       Ce site Web est une source pour les données publiées par la Ville d’Ottawa, pour un usage gratuit par
@@ -37,7 +37,7 @@
               </div>
               {% else %}
               <div class="col-md-12">
-                  <h3>Welcome to Ottawa's Open Data Catalogue</h3>
+                  <h2 class="h3">Welcome to Ottawa's Open Data Catalogue</h2>
 
                   <p>
                       This website is a source of data released by the City of Ottawa
