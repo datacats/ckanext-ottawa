@@ -4,7 +4,7 @@
     {% if h.lang() == 'fr' %}
     <div class="container">
 
-        <nav role="navigation" class="row"><h2>{% set api_url = 'http://docs.ckan.org/{0}/{1}/api.html'.format(request.environ.CKAN_LANG, g.ckan_doc_version) %}</h2>
+        <nav role="navigation" class="row">
             <section class="col-sm-4">
                 <div class="boxes-box-content">
                     <div class="logo">
@@ -71,7 +71,7 @@
     {% else %}
     <div class="container">
 
-        <nav role="navigation" class="row"><h2>{% set api_url = 'http://docs.ckan.org/{0}/{1}/api.html'.format(request.environ.CKAN_LANG, g.ckan_doc_version) %}</h2>
+        <nav role="navigation" class="row">
             <section class="col-sm-4">
                 <div class="boxes-box-content">
                     <div class="logo">
