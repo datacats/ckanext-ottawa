@@ -1,7 +1,11 @@
 {% ckan_extends %}
 
 {%- block pre_top_nav -%}
-    <a href="http://ottawa.ca"><img src="/img/ottawalogo.png" style="height:30px"/></a>
+    {% if h.lang() == 'fr' %}
+        <a href="http://ottawa.ca/fr"><img src="/img/ottawalogo.png" alt="Ville d'Ottawa" style="height:30px"/></a>
+    {% else %}
+        <a href="http://ottawa.ca"><img src="/img/ottawalogo.png" alt="City of Ottawa" style="height:30px"/></a>
+    {% endif %}
 {%- endblock -%}
 
 {% block header_account_logged %}
