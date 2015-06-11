@@ -53,25 +53,22 @@ a:visited{
   background: url(/img/topbarbg.png) repeat-x bottom;
   z-index: 1; }
 
-#wb-bar ul li{
-    border-radius: 5px;
-    background: #004587;
-    margin: 0 5px 0 5px;
-}
 
 #wb-lng ul, #wb-glb-mn .pnl-btn {
   float: right;
-  margin: 0; }
+  margin: 5px 0 0 0; }
   #wb-lng ul li, #wb-glb-mn .pnl-btn li {
-    border-left: 1px solid #777;
     float: left;
-    list-style-type: none;
-    padding: 6px 15px; }
+    list-style-type: none;}
     #wb-lng ul li:first-child, #wb-glb-mn .pnl-btn li:first-child {
       border-left: 0; }
   #wb-lng ul a, #wb-glb-mn .pnl-btn a {
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    background: #004587;
+    margin: 0 5px 0 5px;}
 
 #wb-glb-mn .pnl-btn {
   position: relative;
