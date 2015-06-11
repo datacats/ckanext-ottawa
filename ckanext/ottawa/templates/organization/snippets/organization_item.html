@@ -1,0 +1,11 @@
+{% ckan_extends %}
+
+{% block title %}
+    <a href="{{ url }}" class="media-heading">
+        {% if h.lang() == 'fr' %}
+            {{ h.french_group_name(organization, org=True) }}
+        {% else %}
+            {{ organization.display_name }}
+        {% endif %}
+    </a>
+{% endblock %}

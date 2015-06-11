@@ -167,16 +167,17 @@ def db_to_form_schema(group_type='group'):
     from ckan.lib.plugins import lookup_group_plugin
     return lookup_group_plugin(group_type).db_to_form_schema()
 
-def _french_group_name(group_dict):
+def _french_group_name(group_dict, org=False):
     """
     CKAN doesn't give us the full group dict on /groups, but we need it
     """
+    action = 'organization_show' if org else 'group_show'
     context = {'model': model, 'session': model.Session,
                'ignore_auth': True,
                'schema': db_to_form_schema(),
                'for_view': True}
     data_dict = {'id': group_dict['id'], 'include_datasets': True}
 
-    group = get_action('group_show')({}, {'id': group_dict['name']})
+    group = get_action(action)({}, {'id': group_dict['name']})
 
     return group.get('title_fr', group['display_name'])
