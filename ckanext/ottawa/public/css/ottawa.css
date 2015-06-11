@@ -705,3 +705,7 @@ h1, h2, h3, h4, h5 {
 .h3{
     color: #008375;
 }
+
+.form-actions a{
+    margin-right:5px;
+}
