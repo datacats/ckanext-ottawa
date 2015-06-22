@@ -47,7 +47,7 @@ def download_temp_file(resource_path, file_name):
 
 def upload_file_to_resource(resource, file_object):
     filename = "{0}.{1}".format(resource['name'], resource['format'])
-    if resource['format'] == 'shp':
+    if resource['format'].lower() == 'shp':
         filename = "{0}.{1}.zip".format(resource['name'], resource['format'])
     resource['upload'] = (filename, file_object)
     resource['last_modified'] = datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")
