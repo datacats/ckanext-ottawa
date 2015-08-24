@@ -443,3 +443,37 @@ water:
     shp.xml: Shapefiles/SAM_CITYWIDE_water.shp.xml
     shx: Shapefiles/SAM_CITYWIDE_water.shx
   xml: XML/SAM_CITYWIDE_water.xml
+addresspoints:
+  csv: Tables/AD_SiteAddressPoint.csv
+  shp:
+    dbf: Shapefiles/AD_SiteAddressPoint.dbf
+    prj: Shapefiles/AD_SiteAddressPoint.prj
+    sbn: Shapefiles/AD_SiteAddressPoint.sbn
+    sbx: Shapefiles/AD_SiteAddressPoint.sbx
+    shp: Shapefiles/AD_SiteAddressPoint.shp
+    shp.xml: Shapefiles/AD_SiteAddressPoint.shp.xml
+    shx: Shapefiles/AD_SiteAddressPoint.shx
+roads:
+  csv: Tables/RD_RdSegment_All_ext.csv
+  dwg: DWG/RD_RdSegment_All_ext.dwg
+  kmz: KMZ/RD_RdSegment_All_ext.kmz
+  shp:
+    dbf: Shapefiles/RD_RdSegment_All_ext.dbf
+    prj: Shapefiles/RD_RdSegment_All_ext.prj
+    sbn: Shapefiles/RD_RdSegment_All_ext.sbn
+    sbx: Shapefiles/RD_RdSegment_All_ext.sbx
+    shp: Shapefiles/RD_RdSegment_All_ext.shp
+    shp.xml: Shapefiles/RD_RdSegment_All_ext.shp.xml
+    shx: Shapefiles/RD_RdSegment_All_ext.shx
+roads-proposed:
+  csv: Tables/RD_RdSegment_Prop.csv
+  dwg: DWG/RD_RdSegment_Prop.dwg
+  kmz: KMZ/RD_RdSegment_Prop.kmz
+  shp:
+    dbf: Shapefiles/RD_RdSegment_Prop.dbf
+    prj: Shapefiles/RD_RdSegment_Prop.prj
+    sbn: Shapefiles/RD_RdSegment_Prop.sbn
+    sbx: Shapefiles/RD_RdSegment_Prop.sbx
+    shp: Shapefiles/RD_RdSegment_Prop.shp
+    shp.xml: Shapefiles/RD_RdSegment_Prop.shp.xml
+    shx: Shapefiles/RD_RdSegment_Prop.shx

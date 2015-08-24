@@ -1,2 +1,3 @@
 *.pyc
 ckanext/ottawa/temp_data/
+ckanext_ottawa.egg-info/
