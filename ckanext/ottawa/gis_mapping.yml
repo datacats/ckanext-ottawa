@@ -477,3 +477,15 @@ roads-proposed:
     shp: Shapefiles/RD_RdSegment_Prop.shp
     shp.xml: Shapefiles/RD_RdSegment_Prop.shp.xml
     shx: Shapefiles/RD_RdSegment_Prop.shx
+community-gardens:
+  csv: Tables/CSS_communityGardens.csv
+  dwg: DWG/CSS_communityGardens.dwg
+  kmz: KMZ/CSS_communityGardens.kmz
+  shp:
+    dbf: Shapefiles/CSS_communityGardens.dbf
+    prj: Shapefiles/CSS_communityGardens.prj
+    sbn: Shapefiles/CSS_communityGardens.sbn
+    sbx: Shapefiles/CSS_communityGardens.sbx
+    shp: Shapefiles/CSS_communityGardens.shp
+    shp.xml: Shapefiles/CSS_communityGardens.shp.xml
+    shx: Shapefiles/CSS_communityGardens.shx
