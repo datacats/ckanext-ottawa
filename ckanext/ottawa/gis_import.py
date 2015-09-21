@@ -118,9 +118,16 @@ for dataset, resources_mapping in mapping.iteritems():
         print "dataset not found: {0}".format(dataset)
         continue
 
-    for res in package['resources']:
-        if res['format'].lower() in resources_mapping:
+    existing_formats = [res['format'].lower() for res in package['resources']]
+    for resource_format in resources_mapping:
+        if resource_format not in existing_formats:
+            resource = create_resource(package, resource_format)
+        else:
+            resource = [res for res
+                in package['resources']
+                if res['format'] == resource_format
+                ][0]
 
-            import_file = get_import_url(res, resources_mapping)
-            if out_of_date(res, import_file):
-                perform_import(res, resources_mapping)
+        import_file = get_import_url(res, resources_mapping)
+        if out_of_date(res, import_file):
+            perform_import(res, resources_mapping)
