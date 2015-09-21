@@ -489,3 +489,87 @@ community-gardens:
     shp: Shapefiles/CSS_communityGardens.shp
     shp.xml: Shapefiles/CSS_communityGardens.shp.xml
     shx: Shapefiles/CSS_communityGardens.shx
+child-care-facilities:
+  csv: Tables/CSS_LicensedDaycareCentres.csv
+  dwg: DWG/CSS_LicensedDaycareCentres.dwg
+  kmz: KMZ/CSS_LicensedDaycareCentres.kmz
+  shp:
+    dbf: Shapefiles/CSS_LicensedDaycareCentres.dbf
+    prj: Shapefiles/CSS_LicensedDaycareCentres.prj
+    sbn: Shapefiles/CSS_LicensedDaycareCentres.sbn
+    sbx: Shapefiles/CSS_LicensedDaycareCentres.sbx
+    shp: Shapefiles/CSS_LicensedDaycareCentres.shp
+    shp.xml: Shapefiles/CSS_LicensedDaycareCentres.shp.xml
+    shx: Shapefiles/CSS_LicensedDaycareCentres.shx
+social-support-centre-boundaries:
+  csv: Tables/CSS_CommSocialSupportBoundary.csv
+  dwg: DWG/CSS_CommSocialSupportBoundary.dwg
+  kmz: KMZ/CSS_CommSocialSupportBoundary.kmz
+  shp:
+    dbf: Shapefiles/CSS_CommSocialSupportBoundary.dbf
+    prj: Shapefiles/CSS_CommSocialSupportBoundary.prj
+    sbn: Shapefiles/CSS_CommSocialSupportBoundary.sbn
+    sbx: Shapefiles/CSS_CommSocialSupportBoundary.sbx
+    shp: Shapefiles/CSS_CommSocialSupportBoundary.shp
+    shp.xml: Shapefiles/CSS_CommSocialSupportBoundary.shp.xml
+    shx: Shapefiles/CSS_CommSocialSupportBoundary.shx
+community-social-support-centres:
+  csv: Tables/CSS_CommSocialSupportCentres.csv
+  dwg: DWG/CSS_CommSocialSupportCentres.dwg
+  kmz: KMZ/CSS_CommSocialSupportCentres.kmz
+  shp:
+    dbf: Shapefiles/CSS_CommSocialSupportCentres.dbf
+    prj: Shapefiles/CSS_CommSocialSupportCentres.prj
+    sbn: Shapefiles/CSS_CommSocialSupportCentres.sbn
+    sbx: Shapefiles/CSS_CommSocialSupportCentres.sbx
+    shp: Shapefiles/CSS_CommSocialSupportCentres.shp
+    shp.xml: Shapefiles/CSS_CommSocialSupportCentres.shp.xml
+    shx: Shapefiles/CSS_CommSocialSupportCentres.shx
+employment-services:
+  csv: Tables/CSS_EmploymentServices.csv
+  dwg: DWG/CSS_EmploymentServices.dwg
+  kmz: KMZ/CSS_EmploymentServices.kmz
+  shp:
+    dbf: Shapefiles/CSS_EmploymentServices.dbf
+    prj: Shapefiles/CSS_EmploymentServices.prj
+    sbn: Shapefiles/CSS_EmploymentServices.sbn
+    sbx: Shapefiles/CSS_EmploymentServices.sbx
+    shp: Shapefiles/CSS_EmploymentServices.shp
+    shp.xml: Shapefiles/CSS_EmploymentServices.shp.xml
+    shx: Shapefiles/CSS_EmploymentServices.shx
+long-term-care-homes:
+  csv: Tables/CSS_LongTermCareHomes.csv
+  dwg: DWG/CSS_LongTermCareHomes.dwg
+  kmz: KMZ/CSS_LongTermCareHomes.kmz
+  shp:
+    dbf: Shapefiles/CSS_LongTermCareHomes.dbf
+    prj: Shapefiles/CSS_LongTermCareHomes.prj
+    sbn: Shapefiles/CSS_LongTermCareHomes.sbn
+    sbx: Shapefiles/CSS_LongTermCareHomes.sbx
+    shp: Shapefiles/CSS_LongTermCareHomes.shp
+    shp.xml: Shapefiles/CSS_LongTermCareHomes.shp.xml
+    shx: Shapefiles/CSS_LongTermCareHomes.shx
+residential-services:
+  csv: Tables/CSS_ResidentialServices.csv
+  dwg: DWG/CSS_ResidentialServices.dwg
+  kmz: KMZ/CSS_ResidentialServices.kmz
+  shp:
+    dbf: Shapefiles/CSS_ResidentialServices.dbf
+    prj: Shapefiles/CSS_ResidentialServices.prj
+    sbn: Shapefiles/CSS_ResidentialServices.sbn
+    sbx: Shapefiles/CSS_ResidentialServices.sbx
+    shp: Shapefiles/CSS_ResidentialServices.shp
+    shp.xml: Shapefiles/CSS_ResidentialServices.shp.xml
+    shx: Shapefiles/CSS_ResidentialServices.shx
+retirement-homes:
+  csv: Tables/CSS_RetirementHomes.csv
+  dwg: DWG/CSS_RetirementHomes.dwg
+  kmz: KMZ/CSS_RetirementHomes.kmz
+  shp:
+    dbf: Shapefiles/CSS_RetirementHomes.dbf
+    prj: Shapefiles/CSS_RetirementHomes.prj
+    sbn: Shapefiles/CSS_RetirementHomes.sbn
+    sbx: Shapefiles/CSS_RetirementHomes.sbx
+    shp: Shapefiles/CSS_RetirementHomes.shp
+    shp.xml: Shapefiles/CSS_RetirementHomes.shp.xml
+    shx: Shapefiles/CSS_RetirementHomes.shx
