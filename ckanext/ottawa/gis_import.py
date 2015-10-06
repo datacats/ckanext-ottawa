@@ -1,13 +1,14 @@
 """Import GIS dataset resources into CKAN
 
 Usage:
-    geoimport (-g GIS_REPO) (-m MAPPING) (-r CKAN_URL) (-a APIKEY)
+    geoimport (-g GIS_REPO) (-m MAPPING) (-r CKAN_URL) (-a APIKEY) (--dry-run)
 
 Options:
     -g --gis        Location of the GIS resource repo to import from
     -m --mapping    Location of the YAML file where resource mappings are stored
     -r --remote     CKAN URL
     -a --apikey     CKAN API Key to use when importing
+    --dry-run       Show what would be imported but don't actually import
 """
 
 import os
@@ -27,6 +28,7 @@ mapping =  yaml.load(stream)
 
 ckan = ckanapi.RemoteCKAN(arguments['CKAN_URL'], apikey=arguments['APIKEY'])
 base_import_url = arguments['GIS_REPO']
+debug = arguments['--dry-run']
 
 def download_temp_file(resource_path, file_name):
         r = requests.get(resource_path, stream=True)
@@ -87,12 +89,16 @@ def get_import_url(resource, mapping):
 
 def get_import_file_date(import_file):
     head = requests.head(import_file)
-    date_modified = parse(head.headers['last-modified']).replace(tzinfo=None)
+    try:
+        date_modified = parse(head.headers['last-modified']).replace(tzinfo=None)
+    except KeyError as e:
+        print "Could not determine last modified date of {0}".format(import_file)
 
     return date_modified
 
 def out_of_date(resource, import_file):
     date_modified = get_import_file_date(import_file)
+
     resource_modified = parse(resource['last_modified']).replace(tzinfo=None)
 
     if date_modified > resource_modified:
@@ -121,13 +127,21 @@ for dataset, resources_mapping in mapping.iteritems():
     existing_formats = [res['format'].lower() for res in package['resources']]
     for resource_format in resources_mapping:
         if resource_format not in existing_formats:
-            resource = create_resource(package, resource_format)
+            resource = ckan.action.resource_create(
+                package_id=package['id'],
+                url='http://example.com',
+                format=resource_format,
+                last_modified=datetime.now().isoformat()
+            )
         else:
             resource = [res for res
                 in package['resources']
-                if res['format'] == resource_format
+                if res['format'].lower() == resource_format
                 ][0]
 
-        import_file = get_import_url(res, resources_mapping)
-        if out_of_date(res, import_file):
-            perform_import(res, resources_mapping)
+        import_file = get_import_url(resource, resources_mapping)
+        if out_of_date(resource, import_file):
+            if debug:
+                print "Would refresh {0}".format(resource['url'])
+            else:
+                perform_import(resource, resources_mapping)
