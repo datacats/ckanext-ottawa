@@ -1,3 +1,4 @@
 markdown
 ckanapi
 python-dateutil
+pyyaml
