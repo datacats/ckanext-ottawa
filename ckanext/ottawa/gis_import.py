@@ -1,14 +1,22 @@
 """Import GIS dataset resources into CKAN
 
 Usage:
-    geoimport (-g GIS_REPO) (-m MAPPING) (-r CKAN_URL) (-a APIKEY) (--dry-run)
+    geoimport (-g GIS_REPO)
+        (-m MAPPING)
+        (-r CKAN_URL)
+        (-a APIKEY)
+        [-d DATASET]
+        [--force]
+        [--dry-run]
 
 Options:
     -g --gis        Location of the GIS resource repo to import from
     -m --mapping    Location of the YAML file where resource mappings are stored
     -r --remote     CKAN URL
     -a --apikey     CKAN API Key to use when importing
+    -d --dataset    If you want to import a single dataset
     --dry-run       Show what would be imported but don't actually import
+    --force         Update resource whether it needs updating or not
 """
 
 import os
@@ -26,8 +34,11 @@ arguments = docopt(__doc__)
 stream = open(arguments['MAPPING'], 'r')
 mapping =  yaml.load(stream)
 
+single_dataset = arguments['DATASET']
+
 ckan = ckanapi.RemoteCKAN(arguments['CKAN_URL'], apikey=arguments['APIKEY'])
 base_import_url = arguments['GIS_REPO']
+force = arguments['--force']
 debug = arguments['--dry-run']
 
 def download_temp_file(resource_path, file_name):
@@ -99,9 +110,12 @@ def get_import_file_date(import_file):
 def out_of_date(resource, import_file):
     date_modified = get_import_file_date(import_file)
 
-    resource_modified = parse(resource['last_modified']).replace(tzinfo=None)
+    if resource['last_modified']:
+        resource_modified = parse(resource['last_modified']).replace(tzinfo=None)
+    else:
+        resource_modified = datetime.now()
 
-    if date_modified > resource_modified:
+    if (date_modified > resource_modified) or force:
         return True
     else:
         return False
@@ -117,12 +131,12 @@ def perform_import(resource, mapping):
         upload_file_to_resource(resource, f.raw)
         f.close()
 
-for dataset, resources_mapping in mapping.iteritems():
+def main_job(dataset, resources_mapping):
     try:
         package = ckan.action.package_show(id=dataset)
     except ckanapi.errors.NotFound:
         print "dataset not found: {0}".format(dataset)
-        continue
+        return
 
     existing_formats = [res['format'].lower() for res in package['resources']]
     for resource_format in resources_mapping:
@@ -145,3 +159,10 @@ for dataset, resources_mapping in mapping.iteritems():
                 print "Would refresh {0}".format(resource['url'])
             else:
                 perform_import(resource, resources_mapping)
+
+if single_dataset and mapping[single_dataset]:
+    main_job(single_dataset, mapping[single_dataset])
+
+else:
+    for dataset, resources_mapping in mapping.iteritems():
+        main_job(dataset, resources_mapping)
