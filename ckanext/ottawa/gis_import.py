@@ -112,6 +112,8 @@ def out_of_date(resource, import_file):
 
     if resource['last_modified']:
         resource_modified = parse(resource['last_modified']).replace(tzinfo=None)
+    elif resource['created']:
+        resource_modified = parse(resource['created']).replace(tzinfo=None)
     else:
         resource_modified = datetime.now()
 
