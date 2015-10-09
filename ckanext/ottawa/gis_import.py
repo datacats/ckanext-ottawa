@@ -147,7 +147,8 @@ def main_job(dataset, resources_mapping):
                 package_id=package['id'],
                 url='http://example.com',
                 format=resource_format,
-                last_modified=datetime.now().isoformat()
+                last_modified=datetime.now().isoformat(),
+                name="{0}:{1}".format(package['name'], resource_format)
             )
         else:
             resource = [res for res
