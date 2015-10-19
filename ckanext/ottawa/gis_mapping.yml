@@ -573,3 +573,51 @@ retirement-homes:
     shp: Shapefiles/CSS_RetirementHomes.shp
     shp.xml: Shapefiles/CSS_RetirementHomes.shp.xml
     shx: Shapefiles/CSS_RetirementHomes.shx
+urban-transit-area:
+  csv: Tables/SAM_transitAreaUrban.csv
+  dwg: DWG/SAM_transitAreaUrban.dwg
+  kmz: KMZ/SAM_transitAreaUrban.kmz
+  shp:
+    dbf: Shapefiles/SAM_transitAreaUrban.cpg
+    prj: Shapefiles/SAM_transitAreaUrban.prj
+    sbn: Shapefiles/SAM_transitAreaUrban.sbn
+    sbx: Shapefiles/SAM_transitAreaUrban.sbx
+    shp: Shapefiles/CSS_RetirementHomes.shp
+    shp.xml: Shapefiles/SAM_transitAreaUrban.shp.xml
+    shx: Shapefiles/SAM_transitAreaUrban.shx
+rural-transit-area:
+  csv: Tables/SAM_transitAreaRural.csv
+  dwg: DWG/SAM_transitAreaRural.dwg
+  kmz: KMZ/SAM_transitAreaRural.kmz
+  shp:
+    dbf: Shapefiles/SAM_transitAreaRural.cpg
+    prj: Shapefiles/SAM_transitAreaRural.prj
+    sbn: Shapefiles/SAM_transitAreaRural.sbn
+    sbx: Shapefiles/SAM_transitAreaRural.sbx
+    shp: Shapefiles/SAM_transitAreaRural.shp
+    shp.xml: Shapefiles/SAM_transitAreaRural.shp.xml
+    shx: Shapefiles/SAM_transitAreaRural.shx
+lagoons:
+  csv: Tables/SAM_CITYWIDE_lagoons.csv
+  dwg: DWG/SAM_CITYWIDE_lagoons.dwg
+  kmz: KMZ/SAM_CITYWIDE_lagoons.kmz
+  shp:
+    dbf: Shapefiles/SAM_CITYWIDE_lagoons.cpg
+    prj: Shapefiles/SAM_CITYWIDE_lagoons.prj
+    sbn: Shapefiles/SAM_CITYWIDE_lagoons.sbn
+    sbx: Shapefiles/SAM_CITYWIDE_lagoons.sbx
+    shp: Shapefiles/SAM_CITYWIDE_lagoons.shp
+    shp.xml: Shapefiles/SAM_CITYWIDE_lagoons.shp.xml
+    shx: Shapefiles/SAM_CITYWIDE_lagoons.shx
+wards-2014:
+  csv: Tables/EL_Wards.csv
+  dwg: DWG/EL_Wards.dwg
+  kmz: KMZ/EL_Wards.kmz
+  shp:
+    dbf: Shapefiles/EL_Wards.cpg
+    prj: Shapefiles/EL_Wards.prj
+    sbn: Shapefiles/EL_Wards.sbn
+    sbx: Shapefiles/EL_Wards.sbx
+    shp: Shapefiles/EL_Wards.shp
+    shp.xml: Shapefiles/EL_Wards.shp.xml
+    shx: Shapefiles/EL_Wards.shx
