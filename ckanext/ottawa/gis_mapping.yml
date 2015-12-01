@@ -621,3 +621,15 @@ wards-2014:
     shp: Shapefiles/EL_Wards.shp
     shp.xml: Shapefiles/EL_Wards.shp.xml
     shx: Shapefiles/EL_Wards.shx
+licensed-daycare-centres:
+  csv: Tables/CSS_PrivateHomeDaycareAgencies.csv
+  dwg: DWG/CSS_PrivateHomeDaycareAgencies.dwg
+  kmz: KMZ/CSS_PrivateHomeDaycareAgencies.kmz
+  shp:
+    dbf: Shapefiles/CSS_PrivateHomeDaycareAgencies.cpg
+    prj: Shapefiles/CSS_PrivateHomeDaycareAgencies.prj
+    sbn: Shapefiles/CSS_PrivateHomeDaycareAgencies.sbn
+    sbx: Shapefiles/CSS_PrivateHomeDaycareAgencies.sbx
+    shp: Shapefiles/CSS_PrivateHomeDaycareAgencies.shp
+    shp.xml: Shapefiles/CSS_PrivateHomeDaycareAgencies.shp.xml
+    shx: Shapefiles/CSS_PrivateHomeDaycareAgencies.shx
