@@ -621,7 +621,7 @@ wards-2014:
     shp: Shapefiles/EL_Wards.shp
     shp.xml: Shapefiles/EL_Wards.shp.xml
     shx: Shapefiles/EL_Wards.shx
-licensed-daycare-centres:
+licensed-private-home-daycare:
   csv: Tables/CSS_PrivateHomeDaycareAgencies.csv
   dwg: DWG/CSS_PrivateHomeDaycareAgencies.dwg
   kmz: KMZ/CSS_PrivateHomeDaycareAgencies.kmz
@@ -633,3 +633,15 @@ licensed-daycare-centres:
     shp: Shapefiles/CSS_PrivateHomeDaycareAgencies.shp
     shp.xml: Shapefiles/CSS_PrivateHomeDaycareAgencies.shp.xml
     shx: Shapefiles/CSS_PrivateHomeDaycareAgencies.shx
+publicly-accessible-computers:
+  csv: Tables/CSS_PublicAccessibleComputers.csv
+  dwg: DWG/CSS_PublicAccessibleComputers.dwg
+  kmz: KMZ/CSS_PublicAccessibleComputers.kmz
+  shp:
+    dbf: Shapefiles/CSS_PublicAccessibleComputers.cpg
+    prj: Shapefiles/CSS_PublicAccessibleComputers.prj
+    sbn: Shapefiles/CSS_PublicAccessibleComputers.sbn
+    sbx: Shapefiles/CSS_PublicAccessibleComputers.sbx
+    shp: Shapefiles/CSS_PublicAccessibleComputers.shp
+    shp.xml: Shapefiles/CSS_PublicAccessibleComputers.shp.xml
+    shx: Shapefiles/CSS_PublicAccessibleComputers.shx
