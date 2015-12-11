@@ -501,6 +501,18 @@ child-care-facilities:
     shp: Shapefiles/CSS_LicensedDaycareCentres.shp
     shp.xml: Shapefiles/CSS_LicensedDaycareCentres.shp.xml
     shx: Shapefiles/CSS_LicensedDaycareCentres.shx
+licensed-daycare-centres:
+  csv: Tables/CSS_LicensedDaycareCentres.csv
+  dwg: DWG/CSS_LicensedDaycareCentres.dwg
+  kmz: KMZ/CSS_LicensedDaycareCentres.kmz
+  shp:
+    dbf: Shapefiles/CSS_LicensedDaycareCentres.dbf
+    prj: Shapefiles/CSS_LicensedDaycareCentres.prj
+    sbn: Shapefiles/CSS_LicensedDaycareCentres.sbn
+    sbx: Shapefiles/CSS_LicensedDaycareCentres.sbx
+    shp: Shapefiles/CSS_LicensedDaycareCentres.shp
+    shp.xml: Shapefiles/CSS_LicensedDaycareCentres.shp.xml
+    shx: Shapefiles/CSS_LicensedDaycareCentres.shx
 social-support-centre-boundaries:
   csv: Tables/CSS_CommSocialSupportBoundary.csv
   dwg: DWG/CSS_CommSocialSupportBoundary.dwg
