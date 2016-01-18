@@ -657,3 +657,15 @@ publicly-accessible-computers:
     shp: Shapefiles/CSS_PublicAccessibleComputers.shp
     shp.xml: Shapefiles/CSS_PublicAccessibleComputers.shp.xml
     shx: Shapefiles/CSS_PublicAccessibleComputers.shx
+publicwashrooms:
+  csv: Tables/MISC_PublicWashroom.csv
+  dwg: DWG/MISC_PublicWashroom.dwg
+  kmz: KMZ/MISC_PublicWashroom.kmz
+  shp:
+    dbf: Shapefiles/MISC_PublicWashroom.cpg
+    prj: Shapefiles/MISC_PublicWashroom.prj
+    sbn: Shapefiles/MISC_PublicWashroom.sbn
+    sbx: Shapefiles/MISC_PublicWashroom.sbx
+    shp: Shapefiles/MISC_PublicWashroom.shp
+    shp.xml: Shapefiles/MISC_PublicWashroom.shp.xml
+    shx: Shapefiles/MISC_PublicWashroom.shx
