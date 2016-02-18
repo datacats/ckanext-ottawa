@@ -100,15 +100,24 @@ def get_import_url(resource, mapping):
 
 def get_import_file_date(import_file):
     head = requests.head(import_file)
+    
+    if head.status_code == 404:
+        print "Resource is missing: {0}".format(import_file)
+        return None
+    
     try:
         date_modified = parse(head.headers['last-modified']).replace(tzinfo=None)
     except KeyError as e:
         print "Could not determine last modified date of {0}".format(import_file)
-
+    
     return date_modified
 
 def out_of_date(resource, import_file):
     date_modified = get_import_file_date(import_file)
+    
+    #Date modified is usually None when the file is missing from GIS repo
+    if date_modified is None:
+        return False
 
     if resource['last_modified']:
         resource_modified = parse(resource['last_modified']).replace(tzinfo=None)
