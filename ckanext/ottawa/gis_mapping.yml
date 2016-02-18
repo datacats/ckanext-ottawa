@@ -489,30 +489,6 @@ community-gardens:
     shp: Shapefiles/CSS_communityGardens.shp
     shp.xml: Shapefiles/CSS_communityGardens.shp.xml
     shx: Shapefiles/CSS_communityGardens.shx
-child-care-facilities:
-  csv: Tables/CSS_LicensedDaycareCentres.csv
-  dwg: DWG/CSS_LicensedDaycareCentres.dwg
-  kmz: KMZ/CSS_LicensedDaycareCentres.kmz
-  shp:
-    dbf: Shapefiles/CSS_LicensedDaycareCentres.dbf
-    prj: Shapefiles/CSS_LicensedDaycareCentres.prj
-    sbn: Shapefiles/CSS_LicensedDaycareCentres.sbn
-    sbx: Shapefiles/CSS_LicensedDaycareCentres.sbx
-    shp: Shapefiles/CSS_LicensedDaycareCentres.shp
-    shp.xml: Shapefiles/CSS_LicensedDaycareCentres.shp.xml
-    shx: Shapefiles/CSS_LicensedDaycareCentres.shx
-licensed-daycare-centres:
-  csv: Tables/CSS_LicensedDaycareCentres.csv
-  dwg: DWG/CSS_LicensedDaycareCentres.dwg
-  kmz: KMZ/CSS_LicensedDaycareCentres.kmz
-  shp:
-    dbf: Shapefiles/CSS_LicensedDaycareCentres.dbf
-    prj: Shapefiles/CSS_LicensedDaycareCentres.prj
-    sbn: Shapefiles/CSS_LicensedDaycareCentres.sbn
-    sbx: Shapefiles/CSS_LicensedDaycareCentres.sbx
-    shp: Shapefiles/CSS_LicensedDaycareCentres.shp
-    shp.xml: Shapefiles/CSS_LicensedDaycareCentres.shp.xml
-    shx: Shapefiles/CSS_LicensedDaycareCentres.shx
 social-support-centre-boundaries:
   csv: Tables/CSS_CommSocialSupportBoundary.csv
   dwg: DWG/CSS_CommSocialSupportBoundary.dwg
@@ -633,18 +609,6 @@ wards-2014:
     shp: Shapefiles/EL_Wards.shp
     shp.xml: Shapefiles/EL_Wards.shp.xml
     shx: Shapefiles/EL_Wards.shx
-licensed-private-home-daycare:
-  csv: Tables/CSS_PrivateHomeDaycareAgencies.csv
-  dwg: DWG/CSS_PrivateHomeDaycareAgencies.dwg
-  kmz: KMZ/CSS_PrivateHomeDaycareAgencies.kmz
-  shp:
-    dbf: Shapefiles/CSS_PrivateHomeDaycareAgencies.cpg
-    prj: Shapefiles/CSS_PrivateHomeDaycareAgencies.prj
-    sbn: Shapefiles/CSS_PrivateHomeDaycareAgencies.sbn
-    sbx: Shapefiles/CSS_PrivateHomeDaycareAgencies.sbx
-    shp: Shapefiles/CSS_PrivateHomeDaycareAgencies.shp
-    shp.xml: Shapefiles/CSS_PrivateHomeDaycareAgencies.shp.xml
-    shx: Shapefiles/CSS_PrivateHomeDaycareAgencies.shx
 publicly-accessible-computers:
   csv: Tables/CSS_PublicAccessibleComputers.csv
   dwg: DWG/CSS_PublicAccessibleComputers.dwg
@@ -669,3 +633,40 @@ publicwashrooms:
     shp: Shapefiles/MISC_PublicWashroom.shp
     shp.xml: Shapefiles/MISC_PublicWashroom.shp.xml
     shx: Shapefiles/MISC_PublicWashroom.shx
+licensed-home-child-care-agencies:
+  csv: Tables/CSS_LicensedHomeChildCareAg.csv
+  dwg: DWG/CSS_LicensedHomeChildCareAg.dwg
+  kmz: KMZ/CSS_LicensedHomeChildCareAg.kmz
+  shp:
+    dbf: Shapefiles/CSS_LicensedHomeChildCareAg.cpg
+    prj: Shapefiles/CSS_LicensedHomeChildCareAg.prj
+    sbn: Shapefiles/CSS_LicensedHomeChildCareAg.sbn
+    sbx: Shapefiles/CSS_LicensedHomeChildCareAg.sbx
+    shp: Shapefiles/CSS_LicensedHomeChildCareAg.shp
+    shp.xml: Shapefiles/CSS_LicensedHomeChildCareAg.shp.xml
+    shx: Shapefiles/CSS_LicensedHomeChildCareAg.shx
+licensed-child-care-centres:
+  csv: Tables/CSS_LicensedChildCareCentres.csv
+  dwg: DWG/CSS_LicensedChildCareCentres.dwg
+  kmz: KMZ/CSS_LicensedChildCareCentres.kmz
+  shp:
+    dbf: Shapefiles/CSS_LicensedChildCareCentres.cpg
+    prj: Shapefiles/CSS_LicensedChildCareCentres.prj
+    sbn: Shapefiles/CSS_LicensedChildCareCentres.sbn
+    sbx: Shapefiles/CSS_LicensedChildCareCentres.sbx
+    shp: Shapefiles/CSS_LicensedChildCareCentres.shp
+    shp.xml: Shapefiles/CSS_LicensedChildCareCentres.shp.xml
+    shx: Shapefiles/CSS_LicensedChildCareCentres.shx 
+grit-box-locations:
+  csv: Tables/PW_Grit_Boxes.csv
+  dwg: DWG/PW_Grit_Boxes.dwg
+  kmz: KMZ/PW_Grit_Boxes.kmz
+  shp:
+    dbf: Shapefiles/PW_Grit_Boxes.cpg
+    prj: Shapefiles/PW_Grit_Boxes.prj
+    sbn: Shapefiles/PW_Grit_Boxes.sbn
+    sbx: Shapefiles/PW_Grit_Boxes.sbx
+    shp: Shapefiles/PW_Grit_Boxes.shp
+    shp.xml: Shapefiles/PW_Grit_Boxes.shp.xml
+    shx: Shapefiles/PW_Grit_Boxes.shx 
+
