@@ -669,4 +669,29 @@ grit-box-locations:
     shp: Shapefiles/PW_Grit_Boxes.shp
     shp.xml: Shapefiles/PW_Grit_Boxes.shp.xml
     shx: Shapefiles/PW_Grit_Boxes.shx 
+communitydesignplans:
+  csv: Tables/PL_CommDesignPlans.csv
+  dwg: DWG/PL_CommDesignPlans.dwg
+  kmz: KMZ/PL_CommDesignPlans.kmz
+  shp:
+    dbf: Shapefiles/PL_CommDesignPlans.cpg
+    prj: Shapefiles/PL_CommDesignPlans.prj
+    sbn: Shapefiles/PL_CommDesignPlans.sbn
+    sbx: Shapefiles/PL_CommDesignPlans.sbx
+    shp: Shapefiles/PL_CommDesignPlans.shp
+    shp.xml: Shapefiles/PL_CommDesignPlans.shp.xml
+    shx: Shapefiles/PL_CommDesignPlans.shx 
+secondaryplans:
+  csv: Tables/PL_SecondaryPlans.csv
+  dwg: DWG/PL_SecondaryPlans.dwg
+  kmz: KMZ/PL_SecondaryPlans.kmz
+  shp:
+    dbf: Shapefiles/PL_SecondaryPlans.cpg
+    prj: Shapefiles/PL_SecondaryPlans.prj
+    sbn: Shapefiles/PL_SecondaryPlans.sbn
+    sbx: Shapefiles/PL_SecondaryPlans.sbx
+    shp: Shapefiles/PL_SecondaryPlans.shp
+    shp.xml: Shapefiles/PL_SecondaryPlans.shp.xml
+    shx: Shapefiles/PL_SecondaryPlans.shx 
+
 
