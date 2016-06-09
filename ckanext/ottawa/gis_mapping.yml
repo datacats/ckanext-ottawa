@@ -693,5 +693,17 @@ secondaryplans:
     shp: Shapefiles/PL_SecondaryPlans.shp
     shp.xml: Shapefiles/PL_SecondaryPlans.shp.xml
     shx: Shapefiles/PL_SecondaryPlans.shx 
+garbage-and-recycling-schedules:
+  csv: Tables/SW_Calendar.csv
+  dwg: DWG/SW_Calendar.dwg
+  kmz: KMZ/SW_Calendar.kmz
+  shp:
+    dbf: Shapefiles/SW_Calendar.cpg
+    prj: Shapefiles/SW_Calendar.prj
+    sbn: Shapefiles/SW_Calendar.sbn
+    sbx: Shapefiles/SW_Calendar.sbx
+    shp: Shapefiles/SW_Calendar.shp
+    shp.xml: Shapefiles/SW_Calendar.shp.xml
+    shx: Shapefiles/SW_Calendar.shx
 
 
