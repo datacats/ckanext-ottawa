@@ -566,7 +566,7 @@ urban-transit-area:
   dwg: DWG/SAM_transitAreaUrban.dwg
   kmz: KMZ/SAM_transitAreaUrban.kmz
   shp:
-    dbf: Shapefiles/SAM_transitAreaUrban.cpg
+    dbf: Shapefiles/SAM_transitAreaUrban.dbf
     prj: Shapefiles/SAM_transitAreaUrban.prj
     sbn: Shapefiles/SAM_transitAreaUrban.sbn
     sbx: Shapefiles/SAM_transitAreaUrban.sbx
@@ -578,7 +578,7 @@ rural-transit-area:
   dwg: DWG/SAM_transitAreaRural.dwg
   kmz: KMZ/SAM_transitAreaRural.kmz
   shp:
-    dbf: Shapefiles/SAM_transitAreaRural.cpg
+    dbf: Shapefiles/SAM_transitAreaRural.dbf
     prj: Shapefiles/SAM_transitAreaRural.prj
     sbn: Shapefiles/SAM_transitAreaRural.sbn
     sbx: Shapefiles/SAM_transitAreaRural.sbx
@@ -590,7 +590,7 @@ lagoons:
   dwg: DWG/SAM_CITYWIDE_lagoons.dwg
   kmz: KMZ/SAM_CITYWIDE_lagoons.kmz
   shp:
-    dbf: Shapefiles/SAM_CITYWIDE_lagoons.cpg
+    dbf: Shapefiles/SAM_CITYWIDE_lagoons.dbf
     prj: Shapefiles/SAM_CITYWIDE_lagoons.prj
     sbn: Shapefiles/SAM_CITYWIDE_lagoons.sbn
     sbx: Shapefiles/SAM_CITYWIDE_lagoons.sbx
@@ -602,7 +602,7 @@ wards-2014:
   dwg: DWG/EL_Wards.dwg
   kmz: KMZ/EL_Wards.kmz
   shp:
-    dbf: Shapefiles/EL_Wards.cpg
+    dbf: Shapefiles/EL_Wards.dbf
     prj: Shapefiles/EL_Wards.prj
     sbn: Shapefiles/EL_Wards.sbn
     sbx: Shapefiles/EL_Wards.sbx
@@ -614,7 +614,7 @@ publicly-accessible-computers:
   dwg: DWG/CSS_PublicAccessibleComputers.dwg
   kmz: KMZ/CSS_PublicAccessibleComputers.kmz
   shp:
-    dbf: Shapefiles/CSS_PublicAccessibleComputers.cpg
+    dbf: Shapefiles/CSS_PublicAccessibleComputers.dbf
     prj: Shapefiles/CSS_PublicAccessibleComputers.prj
     sbn: Shapefiles/CSS_PublicAccessibleComputers.sbn
     sbx: Shapefiles/CSS_PublicAccessibleComputers.sbx
@@ -626,7 +626,7 @@ publicwashrooms:
   dwg: DWG/MISC_PublicWashroom.dwg
   kmz: KMZ/MISC_PublicWashroom.kmz
   shp:
-    dbf: Shapefiles/MISC_PublicWashroom.cpg
+    dbf: Shapefiles/MISC_PublicWashroom.dbf
     prj: Shapefiles/MISC_PublicWashroom.prj
     sbn: Shapefiles/MISC_PublicWashroom.sbn
     sbx: Shapefiles/MISC_PublicWashroom.sbx
@@ -638,7 +638,7 @@ licensed-home-child-care-agencies:
   dwg: DWG/CSS_LicensedHomeChildCareAg.dwg
   kmz: KMZ/CSS_LicensedHomeChildCareAg.kmz
   shp:
-    dbf: Shapefiles/CSS_LicensedHomeChildCareAg.cpg
+    dbf: Shapefiles/CSS_LicensedHomeChildCareAg.dbf
     prj: Shapefiles/CSS_LicensedHomeChildCareAg.prj
     sbn: Shapefiles/CSS_LicensedHomeChildCareAg.sbn
     sbx: Shapefiles/CSS_LicensedHomeChildCareAg.sbx
@@ -650,7 +650,7 @@ licensed-child-care-centres:
   dwg: DWG/CSS_LicensedChildCareCentres.dwg
   kmz: KMZ/CSS_LicensedChildCareCentres.kmz
   shp:
-    dbf: Shapefiles/CSS_LicensedChildCareCentres.cpg
+    dbf: Shapefiles/CSS_LicensedChildCareCentres.dbf
     prj: Shapefiles/CSS_LicensedChildCareCentres.prj
     sbn: Shapefiles/CSS_LicensedChildCareCentres.sbn
     sbx: Shapefiles/CSS_LicensedChildCareCentres.sbx
@@ -662,7 +662,7 @@ grit-box-locations:
   dwg: DWG/PW_Grit_Boxes.dwg
   kmz: KMZ/PW_Grit_Boxes.kmz
   shp:
-    dbf: Shapefiles/PW_Grit_Boxes.cpg
+    dbf: Shapefiles/PW_Grit_Boxes.dbf
     prj: Shapefiles/PW_Grit_Boxes.prj
     sbn: Shapefiles/PW_Grit_Boxes.sbn
     sbx: Shapefiles/PW_Grit_Boxes.sbx
@@ -674,7 +674,7 @@ communitydesignplans:
   dwg: DWG/PL_CommDesignPlans.dwg
   kmz: KMZ/PL_CommDesignPlans.kmz
   shp:
-    dbf: Shapefiles/PL_CommDesignPlans.cpg
+    dbf: Shapefiles/PL_CommDesignPlans.dbf
     prj: Shapefiles/PL_CommDesignPlans.prj
     sbn: Shapefiles/PL_CommDesignPlans.sbn
     sbx: Shapefiles/PL_CommDesignPlans.sbx
@@ -686,7 +686,7 @@ secondaryplans:
   dwg: DWG/PL_SecondaryPlans.dwg
   kmz: KMZ/PL_SecondaryPlans.kmz
   shp:
-    dbf: Shapefiles/PL_SecondaryPlans.cpg
+    dbf: Shapefiles/PL_SecondaryPlans.dbf
     prj: Shapefiles/PL_SecondaryPlans.prj
     sbn: Shapefiles/PL_SecondaryPlans.sbn
     sbx: Shapefiles/PL_SecondaryPlans.sbx
@@ -698,7 +698,7 @@ garbage-and-recycling-schedules:
   dwg: DWG/SW_Calendar.dwg
   kmz: KMZ/SW_Calendar.kmz
   shp:
-    dbf: Shapefiles/SW_Calendar.cpg
+    dbf: Shapefiles/SW_Calendar.dbf
     prj: Shapefiles/SW_Calendar.prj
     sbn: Shapefiles/SW_Calendar.sbn
     sbx: Shapefiles/SW_Calendar.sbx
