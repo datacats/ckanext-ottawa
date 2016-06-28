@@ -322,7 +322,7 @@ tennis-courts:
     prj: Shapefiles/PR_Tennis_Courts.prj
     sbn: Shapefiles/PR_Tennis_Courts.sbn
     sbx: Shapefiles/PR_Tennis_Courts.sbx
-    shp: Shapefiles/PR_Ball_Diamonds.shp
+    shp: Shapefiles/PR_Tennis_Courts.shp
     shp.xml: Shapefiles/PR_Tennis_Courts.shp.xml
     shx: Shapefiles/PR_Tennis_Courts.shx
   xml: XML/PR_Tennis_Courts.xml
