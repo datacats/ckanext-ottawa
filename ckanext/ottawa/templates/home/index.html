@@ -68,18 +68,16 @@
               {% for feature_row in h.get_homepage_resource_views() | batch(2) %}
               <div class="row-fluid">
                   {% for feature in feature_row %}
-                      {% if feature['resource_view']['view_type'] != 'geojson_view' %}
-                      <div class="col-md-6 ottawa-previews">
-                          <div class="well">
-                              <h4>{{ h.link_to(h.truncate(h.title(feature['package']['title'], h.lang()), 80), h.url_for(controller='package', action='read', id=feature['package']['name'])) }}</h4>
-                              {% snippet 'package/snippets/resource_view.html',
-                                  resource_view = feature['resource_view'],
-                                  resource = feature['resource'],
-                                  package = feature['package']
-                              %}
-                          </div>
+                  <div class="col-md-6 ottawa-previews">
+                      <div class="well">
+                          <h4>{{ h.link_to(h.truncate(h.title(feature['package']['title'], h.lang()), 80), h.url_for(controller='package', action='read', id=feature['package']['name'])) }}</h4>
+                          {% snippet 'package/snippets/resource_view.html',
+                              resource_view = feature['resource_view'],
+                              resource = feature['resource'],
+                              package = feature['package']
+                          %}
                       </div>
-                      {% endif %}
+                  </div>
                   {% endfor %}
               </div>
               {% endfor %}
