@@ -1,0 +1,10 @@
+{% ckan_extends %}
+
+{% block content_primary_nav %}
+  {{ h.build_nav_icon('user_datasets', _('Datasets'), id=user.name) }}
+  {{ h.build_nav_icon('user_activity_stream', _('Activity Stream'), id=user.name) }}
+  
+  {% if h.check_access('user_update', user) %}
+    <li>{% link_for _('Manage'), controller='user', action='edit', id=user.name, class_='button', icon='wrench' %}</li>
+  {% endif %}
+{% endblock %}
