@@ -705,5 +705,16 @@ garbage-and-recycling-schedules:
     shp: Shapefiles/SW_Calendar.shp
     shp.xml: Shapefiles/SW_Calendar.shp.xml
     shx: Shapefiles/SW_Calendar.shx
-
+business-improvement-areas-bias:
+  csv: Tables/PL_BIA.csv
+  dwg: DWG/PL_BIA.dwg
+  kmz: KMZ/PL_BIA.kmz
+  shp:
+    dbf: Shapefiles/PL_BIA.dbf
+    prj: Shapefiles/PL_BIA.prj
+    sbn: Shapefiles/PL_BIA.sbn
+    sbx: Shapefiles/PL_BIA.sbx
+    shp: Shapefiles/PL_BIA.shp
+    shp.xml: Shapefiles/PL_BIA.shp.xml
+    shx: Shapefiles/PL_BIA.shx
 
